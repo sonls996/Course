@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT CƠ BẢN</title>
+    <script src="https://kit.fontawesome.com/f1bce2ab63.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./sass/education.css">
+    <link rel="stylesheet" href="./sass/inevn.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./sass/htmlcssjs.css">
+</head>
+
+<!-- menu chính-->
+<div class="menu">
+    <div class="menu-wrap df  jcsb ">
+        <div class="menu-wrap-logo">
+            <a href="index.html"><img src="./images/facebook_profile_image.png" alt=""></a>
+        </div>
+        <div class="menu-wrap-menu">
+            <a href="#">TRẺ EM</a>
+            <a href="#">NGƯỜI LỚN</a>
+            <a href="#">GIÁO DỤC</a>
+            <a href="#">THỬ THÁCH</a>
+            <a href="#">ĐĂNG NHẬP</a>
+            <a style="display: none;" href="#">
+                <i id="toggleSearch" class="fas fa-search "></i>
+                <div id="search" class="search ">
+                    <form class="df" action="">
+                        <input type="text" name="" id="search" placeholder=" Search" required>
+                        <button><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+            </a>
+            <a href="#"><span id="toggleSearch1">VI <i class="fas fa-caret-down ml10"></i></span> </a>
+            <div id="search1" class="language ">
+                <p href="#">Tiếng Việt</p>
+                <p href="#">English</p>
+                <p href="#">Tiếng Đức</p>
+                <p href="#">Tiếng Pháp</p>
+                <p href="#">Tiếng Trung </p>
+            </div>
+        </div>
+        <div class="logo-text">
+            <a href="#">Code Super</a>
+        </div>
+        <div onclick="openNav()" class="mobile-menu mr25 ">
+            <i style="color: white;font-size: 26px; line-height: 10vh;" class="fas fa-bars mr10"></i>
+        </div>
+    </div>
+</div>
+
+<!-- nội dung trái-->
+<div class="container-left">
+    <div class="container-left-wrap">
+        <div class="container-left-wrap__search">
+            <input type="text" placeholder="Search...">
+        </div>
+        <div class="container-left-wrap__menu">
+            <!-- home + giới thiệu-->
+            <div class="container-left-wrap__menu-home df">
+                <a href="htmlcssjs.html"> <i class="fas fa-home mr10"></i> Trang chủ</a>
+                <a href="#"> <i class="fas fa-globe mr10"></i> Giới thiệu</a>
+            </div>
+            <!-- home + giới thiệu end-->
+            <div class="container-left-wrap__menu-home df mt50">
+                <a href="#"> <i class="fas fa-home mr10"></i> Danh sách chủ đề </a>
+            </div>
+
+
+            <div class="container-left-wrap__menu-course">
+                <button class="accordion">HTML</button>
+                <div class="panel">
+                    <p><a href="">1.HTML là gì ?</a></p>
+                    <p><a href="">2.Bố cục HTML của 1 trang web</a></p>
+                    <p><a href="">3.Các vị trí thường thấy trong giao diện website</a></p>
+                    <p><a href="">4.Sử dụng gì để viết HTML</a></p>
+                    <p><a href="">5.Ví dụ cụ thể</a></p>
+                    <p><a href="">6.Lời kết </a></p>
+                </div>
+
+                <button class="accordion">CSS</button>
+                <div class="panel">
+                    <p><a href="#id1">1.CSS là gì ?</a></p>
+                    <p><a href="">2.Cú pháp CSS, các cách viết CSS</a></p>
+                    <p><a href="">3.Selector là gì ? Tìm hiểu Selector cơ bản ?</a></p>
+                    <p><a href="">4.Thiết lập màu nền với CSS background</a></p>
+                    <p><a href="">5.Các thuộc tính với định dạng text</a></p>
+                    <p><a href="">6.Lời kết </a></p>
+                </div>
+
+                <button class="accordion">JAVASCRIPT</button>
+                <div class="panel">
+                    <p><a href="">1.Javascript là gì  ?</a></p>
+                    <p><a href="">2.Các cách viết javascript hay gặp </a></p>
+                    <p><a href="">3.Viết chương trình Hello World !</a></p>
+                    <p><a href="">4.Các thư viện đình đám hiện nay</a></p>
+                    <p><a href="">5.Lời kết </a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!-- nội dung phải-->
+<div class="container-right"></div>
+
+
+<!-- my slider menu-->
+<div id="mySidebar" class="nav__tablet-wrap">
+    <div class="nav__tablet-wrap-account">
+        <div onclick="closeNav()" class="closeNav" title="Bấm vào để đóng">x</div>
+        <div class="nav__tablet-wrap-account__icon">
+            <i class="fas fa-user"></i>
+        </div>
+        <div id="clickme" class="nav__tablet-wrap-account__info">Tài khoản <i class="fas fa-caret-down"></i></div>
+    </div>
+    <div class="nav__tablet-wrap-login" id="mobile-wrapLogin">
+        <a href="#"> <i class="fas fa-sign-in-alt"></i> Đăng nhập</a>
+        <a href="#"> <i class="fas fa-sign-out-alt"></i>Đăng ký</a>
+        <a href="#"> <i class="fas fa-times-circle"></i>Thoát</a>
+    </div>
+    <div class="nav__tablet-wrap-menu">
+        <a href="#"> <i class="fas fa-home"></i>TRANG CHỦ</a>
+        <a href="#"> <i class="fas fa-info-circle"></i>TRẺ EM</a>
+        <a href="#"> <i class="fas fa-bus"></i> NGƯỜI LỚN</a>
+        <a href="#"><i class="far fa-newspaper"></i>GIÁO DỤC</a>
+        <a href="#"><i class="fas fa-bullhorn"></i>THỬ THÁCH</a>
+    </div>
+    <div class="nav__tablet-wrap-language">
+        <a href="#">Ngôn ngữ
+            <select name="" id="">
+                <option value="">Tiếng việt</option>
+                <option value="">English</option>
+                <option value="">Tiếng Nga</option>
+                <option value="">Trung quốc</option>
+                <option value="">Pháp</option>
+            </select>
+        </a>
+        <a href="#">Hỗ trợ <span><i class="fas fa-phone-volume"></i> 0398473263</span></a>
+        <a href="#">Tải ứng dụng</a>
+    </div>
+</div>
+<!-- menu ngang hidden end-->
+
+<body>
+    <!-- CDN Javascript and Bootstrap---------------------------------------------------------- start -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="js/education.js"></script>
+    <!-- CDN Javascript and Bootstrap---------------------------------------------------------- end  -->
+</body>
+
+</html>

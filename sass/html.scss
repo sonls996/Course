@@ -1,0 +1,85 @@
+$trang: #fff;
+$den: #000000;
+$dodo: #c0392b;
+$cam: #d35400;
+$camnhat: #e67e22;
+$vang: #f1c40f;
+$vangcam: #f39c12;
+$tim: #8e44ad;
+$xanhdatroi: #2980b9;
+$xanhlacay: #27ae60;
+$greensea: #16a085;
+
+*{
+    font-size: 19px;
+    // line-height: 1.6em;
+}
+.container-right{
+    top: 100px;
+    position: absolute;
+    right: 0;
+    float: right;
+    width: 75%;
+    overflow: scroll;
+    height: 1900px;
+    z-index: -2;
+    &-wrap{
+        width: 80%;
+        margin: 0 auto;
+        &__img{
+            margin: 70px 0;
+            width: 100%;
+            height: 100%;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+    }
+}
+.border{
+    background-color: #F9F9F9;
+    padding: 20px;
+}
+.borderk{
+    padding: 20px;
+    border: 1px solid  rgba($color: #000000, $alpha: 0.1);
+}
+.stt{
+    padding: 6px;
+    // width: 40px;
+    // height: 40px;
+    // line-height: 40px;
+    text-align: center;
+    border-right: 3px solid $xanhlacay;
+}
+.chuthuong{
+    font-weight: 400;
+    color: black;
+}
+.chudam{
+    font-size: 19px;
+    font-weight: 700;
+    color: black;
+}
+.chuxanh{
+    color: $xanhdatroi;
+}
+.chudo{
+    color: red;
+}
+.chumo{
+    color: black;
+    opacity: 0.5;
+}
+.mucluc{
+    padding: 10px 0;
+    border: 1px solid rgba($color: #000000, $alpha: 0.1);
+    padding-left: 20px;
+    font-size: 28px;
+    font-weight: 700;
+    border-left: none;
+    border-right: none;
+}

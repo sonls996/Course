@@ -1,0 +1,83 @@
+* {
+  font-size: 19px;
+}
+
+.container-right {
+  top: 100px;
+  position: absolute;
+  right: 0;
+  float: right;
+  width: 75%;
+  overflow: scroll;
+  height: 1900px;
+  z-index: -2;
+}
+
+.container-right-wrap {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.container-right-wrap__img {
+  margin: 70px 0;
+  width: 100%;
+  height: 100%;
+}
+
+.container-right-wrap__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.border {
+  background-color: #F9F9F9;
+  padding: 20px;
+}
+
+.borderk {
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.stt {
+  padding: 6px;
+  text-align: center;
+  border-right: 3px solid #27ae60;
+}
+
+.chuthuong {
+  font-weight: 400;
+  color: black;
+}
+
+.chudam {
+  font-size: 19px;
+  font-weight: 700;
+  color: black;
+}
+
+.chuxanh {
+  color: #2980b9;
+}
+
+.chudo {
+  color: red;
+}
+
+.chumo {
+  color: black;
+  opacity: 0.5;
+}
+
+.mucluc {
+  padding: 10px 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding-left: 20px;
+  font-size: 28px;
+  font-weight: 700;
+  border-left: none;
+  border-right: none;
+}
+/*# sourceMappingURL=html.css.map */

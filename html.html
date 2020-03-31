@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML CƠ BẢN</title>
+    <script src="https://kit.fontawesome.com/f1bce2ab63.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./sass/education.css">
+    <link rel="stylesheet" href="./sass/inevn.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./sass/htmlcssjs.css">
+    <link rel="stylesheet" href="./sass/html.css">
+</head>
+
+<!-- menu chính-->
+<div class="menu">
+    <div class="menu-wrap df  jcsb ">
+        <div class="menu-wrap-logo">
+            <a href="index.html"><img src="./images/facebook_profile_image.png" alt=""></a>
+        </div>
+        <div class="menu-wrap-menu">
+            <a href="#">TRẺ EM</a>
+            <a href="#">NGƯỜI LỚN</a>
+            <a href="#">GIÁO DỤC</a>
+            <a href="#">THỬ THÁCH</a>
+            <a href="#">ĐĂNG NHẬP</a>
+            <a style="display: none;" href="#">
+                <i id="toggleSearch" class="fas fa-search "></i>
+                <div id="search" class="search ">
+                    <form class="df" action="">
+                        <input type="text" name="" id="search" placeholder=" Search" required>
+                        <button><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+            </a>
+            <a href="#"><span id="toggleSearch1">VI <i class="fas fa-caret-down ml10"></i></span> </a>
+            <div id="search1" class="language ">
+                <p href="#">Tiếng Việt</p>
+                <p href="#">English</p>
+                <p href="#">Tiếng Đức</p>
+                <p href="#">Tiếng Pháp</p>
+                <p href="#">Tiếng Trung </p>
+            </div>
+        </div>
+        <div class="logo-text">
+            <a href="#">Code Super</a>
+        </div>
+        <div onclick="openNav()" class="mobile-menu mr25 ">
+            <i style="color: white;font-size: 26px; line-height: 10vh;" class="fas fa-bars mr10"></i>
+        </div>
+    </div>
+</div>
+
+<!-- nội dung trái-->
+<div class="container-left">
+    <div class="container-left-wrap">
+        <div class="container-left-wrap__search">
+            <input type="text" placeholder="Search...">
+        </div>
+        <div class="container-left-wrap__menu">
+            <!-- home + giới thiệu-->
+            <div class="container-left-wrap__menu-home df">
+                <a href="htmlcssjs.html"> <i class="fas fa-home mr10"></i> Trang chủ</a>
+                <a href="#"> <i class="fas fa-globe mr10"></i> Giới thiệu</a>
+            </div>
+            <!-- home + giới thiệu end-->
+            <div class="container-left-wrap__menu-home df mt50">
+                <a href="#"> <i class="fas fa-home mr10"></i> Danh sách chủ đề </a>
+            </div>
+
+
+            <div class="container-left-wrap__menu-course">
+                <button class="accordion">HTML</button>
+                <div class="panel">
+                    <p><a href="#html1">1.HTML là gì ?</a></p>
+                    <p><a href="">2.Bố cục HTML của 1 trang web</a></p>
+                    <p><a href="">3.Các vị trí thường thấy trong giao diện website</a></p>
+                    <p><a href="">4.Sử dụng gì để viết HTML</a></p>
+                    <p><a href="">5.Ví dụ cụ thể</a></p>
+                    <p><a href="">6.Lời kết </a></p>
+                </div>
+
+                <button class="accordion">CSS</button>
+                <div class="panel">
+                    <p><a href="#id1">1.CSS là gì ?</a></p>
+                    <p><a href="">2.Cú pháp CSS, các cách viết CSS</a></p>
+                    <p><a href="">3.Selector là gì ? Tìm hiểu Selector cơ bản ?</a></p>
+                    <p><a href="">4.Thiết lập màu nền với CSS background</a></p>
+                    <p><a href="">5.Các thuộc tính với định dạng text</a></p>
+                    <p><a href="">6.Lời kết </a></p>
+                </div>
+
+                <button class="accordion">JAVASCRIPT</button>
+                <div class="panel">
+                    <p><a href="">1.Javascript là gì ?</a></p>
+                    <p><a href="">2.Các cách viết javascript hay gặp </a></p>
+                    <p><a href="">3.Viết chương trình Hello World !</a></p>
+                    <p><a href="">4.Các thư viện đình đám hiện nay</a></p>
+                    <p><a href="">5.Lời kết </a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!-- nội dung phải-->
+<div class="container-right">
+    <div class="container-right-wrap">
+        <div class="container-right-wrap__img">
+            <img src="./images/html.png" alt="">
+        </div>
+        <div class="container-right-wrap__content">
+            <p class="chuthuong">Khi bắt đầu làm quen với lập trình web thì HTML chính là nội dung đầu tiên mà bạn phải
+                học, sau đó bạn sẽ kết hợp với CSS để tạo ra những sản phảm rất là độc đáo. Nghe nói thì hay nhưng bạn
+                mới học nên có lẽ hơi mơ hồ phải không nào :D Ok trong serie này ta sẽ cùng nhau khám phá nhé.</p>
+            <!-- nội dung chính-->
+            <div class="border mt30">
+                <p class=" chudam">Nội dung chính</p>
+                <div class="ndchinh mt30">
+                    <p><a class="chudo" href="#html1">1.HTML là gì ?</a></p>
+                    <p><a class="chudo" href="#">2.Bố cục HTML của 1 trang website</a></p>
+                    <p><a class="chudo" href="#">3.Các vị trí thường thấy trong website ?</a></p>
+                    <p><a class="chudo" href="#">4.Sử dụng gì để viết HTML ?</a></p>
+                    <p><a class="chudo" href="#">5.Ví dụ cụ thể</a></p>
+                    <p><a class="chudo" href="#">6.Lời kết </a> </p>
+                </div>
+            </div>
+            <div id="html1" class="mucluc mt30">1 . HTML là gì ?</div>
+            <p class="mt30">HTML là chữ viết tắt của <span class="chudam">HyperText Markup Language,</span> có nghĩa là
+                <span class="chudam">ngôn ngữ đánh dấu siêu văn bản. </span>Nó dùng để định dạng bố cục, các thuộc tính
+                liên quan đến cách hiển thị của một đoạn text và được hiển thị trên một chương trình đặc biệt ta gọi là
+                <span class="chudam">Brower</span>. Hiện nay có khá nhiều <span class="chudam">Brower</span> như <span
+                    class="chudo">Firefox, Chrome, Cốc Cốc</span>. Tất cả Brower đều có điểm chung là giúp người dùng
+                thao tác với website và nó có khả năng biên dịch những đoạn mã HTML, CSS và <span
+                    class="chudo">Javascript.</p>
+            <p class="mt30">HTML là một định dạng đặc biệt của XML nên nó sẽ có thẻ mở và thẻ đóng với cú pháp như sau :
+            </p>
+            <div class="borderk mt30">
+                <p>
+                    <span class="stt">1</span>
+                    <span class="ml30">
+                        < <span class="chuxanh">tagname
+                    </span>> < <span class="chuxanh">/tagname   
+                    </span>>
+                     
+                </>
+                </p>
+            </div>
+
+            <p class="mt30"> Ngoài ra  mỗi thẻ HTML  còn có một số thuộc tính riêng và danh sách các thuộc tính sẽ nằm bên trong thẻ mở như sau :
+            </p>
+
+            <div class="borderk mt30">
+                <p>
+                    <span class="stt">1</span>
+                    <span class="ml30">
+                        < <span class="chuxanh">tagname 
+                            <span class="chumo">id=</span>
+                            <span class="chuxanh">"value1"</span>
+                            <span class="chumo">class=</span>
+                            "value2"
+
+                    </span>> < <span class="chuxanh">/tagname   
+                    </span>>
+                     
+                </>
+                </p>
+            </div>
+            <p class="mt30"> Phần này mình sẽ nói rõ hơn ở phần tiếp theo
+            </p>
+            <p class="mt30"> Như vậy HTML ra đời  với mục đích thiết kế bố cục nội dung cho dữ liệu nói chung và cho giao diện nói riêng.
+            </p>
+            <div class="mucluc mt30">2. Bố cục HTML của một trang web</div>
+
+            <p class="mt30"> Như ở trên mình có giới thiệu HTML dùng để  tạo nên bố cục của giao diện website. Nó có rất nhiều thẻ khác nhau và mỗi thẻ sẽ có những nhiệm vụ nhất định. Vậy bạn có thắc mắc cách chia các thẻ cho một trang web như thế nào không? 
+            </p>
+
+            <p class="mt30"> Thông thường bố cục HTML của một trang web sẽ có dạng như sau : 
+            </p>
+            <div class="borderk">
+                <p class=""><span class="stt">1</span> <span> <span><</span> <span>!DOCTYPE &nbsp; html</span> <span>></span>  </span></p>
+                <p class=""><span class="stt">2</span> &nbsp; &nbsp; &nbsp;  <span><</span>  <span class="chuxanh">html</span> <span>></span> </p>
+                
+                <p class=""><span class="stt">3</span>
+                    <span><</span> <span class="chuxanh">head</span> <span>></span>
+                </p>
+                <p class=""><span class="stt">4</span>
+                </span>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span><</span> <span class="chuxanh">title</span> <span>></span> <span>Page Title</span> <span><</span> <span class="chuxanh">/title</span> <span>></span>
+                </p>
+                <p class=""><span class="stt">5</span></p>
+                <p class=""><span class="stt">6</span></p>
+                <p class=""><span class="stt">7</span></p>
+                <p class=""><span class="stt">8</span></p>
+                <p class=""><span class="stt">9</span></p>
+                <p class=""><span class="stt">1</span></p>
+                <p class=""><span class="stt">1</span></p>
+                    
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- my slider menu-->
+<div id="mySidebar" class="nav__tablet-wrap">
+    <div class="nav__tablet-wrap-account">
+        <div onclick="closeNav()" class="closeNav" title="Bấm vào để đóng">x</div>
+        <div class="nav__tablet-wrap-account__icon">
+            <i class="fas fa-user"></i>
+        </div>
+        <div id="clickme" class="nav__tablet-wrap-account__info">Tài khoản <i class="fas fa-caret-down"></i></div>
+    </div>
+    <div class="nav__tablet-wrap-login" id="mobile-wrapLogin">
+        <a href="#"> <i class="fas fa-sign-in-alt"></i> Đăng nhập</a>
+        <a href="#"> <i class="fas fa-sign-out-alt"></i>Đăng ký</a>
+        <a href="#"> <i class="fas fa-times-circle"></i>Thoát</a>
+    </div>
+    <div class="nav__tablet-wrap-menu">
+        <a href="#"> <i class="fas fa-home"></i>TRANG CHỦ</a>
+        <a href="#"> <i class="fas fa-info-circle"></i>TRẺ EM</a>
+        <a href="#"> <i class="fas fa-bus"></i> NGƯỜI LỚN</a>
+        <a href="#"><i class="far fa-newspaper"></i>GIÁO DỤC</a>
+        <a href="#"><i class="fas fa-bullhorn"></i>THỬ THÁCH</a>
+    </div>
+    <div class="nav__tablet-wrap-language">
+        <a href="#">Ngôn ngữ
+            <select name="" id="">
+                <option value="">Tiếng việt</option>
+                <option value="">English</option>
+                <option value="">Tiếng Nga</option>
+                <option value="">Trung quốc</option>
+                <option value="">Pháp</option>
+            </select>
+        </a>
+        <a href="#">Hỗ trợ <span><i class="fas fa-phone-volume"></i> 0398473263</span></a>
+        <a href="#">Tải ứng dụng</a>
+    </div>
+</div>
+<!-- menu ngang hidden end-->
+
+<body>
+    <!-- CDN Javascript and Bootstrap---------------------------------------------------------- start -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="js/education.js"></script>
+    <!-- CDN Javascript and Bootstrap---------------------------------------------------------- end  -->
+</body>
+
+</html>

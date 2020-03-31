@@ -1,0 +1,117 @@
+
+$trang: #fff;
+$den: #000000;
+$dodo: #c0392b;
+$cam: #d35400;
+$camnhat: #e67e22;
+$vang: #f1c40f;
+$vangcam: #f39c12;
+$tim: #8e44ad;
+$xanhdatroi: #2980b9;
+$xanhlacay: #27ae60;
+$greensea: #16a085;
+.menu{
+    position: fixed;
+}
+.container-left{
+    // float: left;
+    width: 25%;
+    height: 850px;
+    position: fixed;
+    top: 100px;
+    background-color: #F1F1F1;
+    padding: 0 20px;
+    overflow: scroll;
+    &-wrap{
+        &__search{
+            background-color: $trang;
+            margin: 30px 0;
+            input{
+                height: 60px;
+                margin: 0 !important;
+            }
+            input:focus{
+                border: 1px solid $xanhlacay !important;
+            }
+        }
+        &__menu{
+            &-home{
+                flex-direction: column;
+                a{
+                    padding: 20px;
+                    background-color: rgba(0, 0, 0, .1);
+                    color: black;
+                }
+                a:hover{
+                    color: black;
+                    background-color: rgba(0, 0, 0, .2);
+                }
+                a:not(last-child){
+                    border-bottom: 1px solid $trang;
+                }
+            }
+            &-title{
+                a{
+                    padding: 10px 20px;
+                }
+            }
+        }
+    }
+    
+}
+.container-right{
+    float: right;
+    width: 75%;
+    // height: 1900px;
+}
+
+// Danh sách thứ cần học trong khóa học
+.accordion {
+    background-color: rgba(0, 0, 0, .1);
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  .accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    outline: none;
+    p{
+        padding: 10px 0px;
+        a{
+            color: $den;
+        }
+    }
+    p:hover{
+        a{
+            color: red;
+        }
+    }
+  }
