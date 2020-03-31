@@ -80,4 +80,20 @@
   border-left: none;
   border-right: none;
 }
+
+.anh {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.anh img.mt30 {
+  width: 50%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 /*# sourceMappingURL=html.css.map */

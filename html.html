@@ -76,11 +76,11 @@
                 <button class="accordion">HTML</button>
                 <div class="panel">
                     <p><a href="#html1">1.HTML là gì ?</a></p>
-                    <p><a href="">2.Bố cục HTML của 1 trang web</a></p>
-                    <p><a href="">3.Các vị trí thường thấy trong giao diện website</a></p>
-                    <p><a href="">4.Sử dụng gì để viết HTML</a></p>
-                    <p><a href="">5.Ví dụ cụ thể</a></p>
-                    <p><a href="">6.Lời kết </a></p>
+                    <p><a href="#html2">2.Bố cục HTML của 1 trang web</a></p>
+                    <p><a href="#html3">3.Các vị trí thường thấy trong giao diện website</a></p>
+                    <p><a href="#htm4">4.Sử dụng gì để viết HTML</a></p>
+                    <p><a href="#html5">5.Ví dụ cụ thể</a></p>
+                    <p><a href="#html6">6.Lời kết </a></p>
                 </div>
 
                 <button class="accordion">CSS</button>
@@ -125,13 +125,14 @@
                 <p class=" chudam">Nội dung chính</p>
                 <div class="ndchinh mt30">
                     <p><a class="chudo" href="#html1">1.HTML là gì ?</a></p>
-                    <p><a class="chudo" href="#">2.Bố cục HTML của 1 trang website</a></p>
-                    <p><a class="chudo" href="#">3.Các vị trí thường thấy trong website ?</a></p>
-                    <p><a class="chudo" href="#">4.Sử dụng gì để viết HTML ?</a></p>
-                    <p><a class="chudo" href="#">5.Ví dụ cụ thể</a></p>
-                    <p><a class="chudo" href="#">6.Lời kết </a> </p>
+                    <p><a class="chudo" href="#html2">2.Bố cục HTML của 1 trang website</a></p>
+                    <p><a class="chudo" href="#html3">3.Các vị trí thường thấy trong website ?</a></p>
+                    <p><a class="chudo" href="#html4">4.Sử dụng gì để viết HTML ?</a></p>
+                    <p><a class="chudo" href="#html5">5.Ví dụ cụ thể</a></p>
+                    <p><a class="chudo" href="#html6">6.Lời kết </a> </p>
                 </div>
             </div>
+            <!-- id html1-->
             <div id="html1" class="mucluc mt30">1 . HTML là gì ?</div>
             <p class="mt30">HTML là chữ viết tắt của <span class="chudam">HyperText Markup Language,</span> có nghĩa là
                 <span class="chudam">ngôn ngữ đánh dấu siêu văn bản. </span>Nó dùng để định dạng bố cục, các thuộc tính
@@ -177,33 +178,96 @@
             </p>
             <p class="mt30"> Như vậy HTML ra đời  với mục đích thiết kế bố cục nội dung cho dữ liệu nói chung và cho giao diện nói riêng.
             </p>
-            <div class="mucluc mt30">2. Bố cục HTML của một trang web</div>
+            <!-- id html2-->
+            <div id="html2" class="mucluc mt30">2. Bố cục HTML của một trang web</div>
 
             <p class="mt30"> Như ở trên mình có giới thiệu HTML dùng để  tạo nên bố cục của giao diện website. Nó có rất nhiều thẻ khác nhau và mỗi thẻ sẽ có những nhiệm vụ nhất định. Vậy bạn có thắc mắc cách chia các thẻ cho một trang web như thế nào không? 
             </p>
 
             <p class="mt30"> Thông thường bố cục HTML của một trang web sẽ có dạng như sau : 
             </p>
-            <div class="borderk">
+            <div class="borderk mt30">
                 <p class=""><span class="stt">1</span> <span> <span><</span> <span>!DOCTYPE &nbsp; html</span> <span>></span>  </span></p>
                 <p class=""><span class="stt">2</span> &nbsp; &nbsp; &nbsp;  <span><</span>  <span class="chuxanh">html</span> <span>></span> </p>
                 
                 <p class=""><span class="stt">3</span>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
                     <span><</span> <span class="chuxanh">head</span> <span>></span>
                 </p>
                 <p class=""><span class="stt">4</span>
                 </span>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span><</span> <span class="chuxanh">title</span> <span>></span> <span>Page Title</span> <span><</span> <span class="chuxanh">/title</span> <span>></span>
                 </p>
-                <p class=""><span class="stt">5</span></p>
-                <p class=""><span class="stt">6</span></p>
-                <p class=""><span class="stt">7</span></p>
-                <p class=""><span class="stt">8</span></p>
-                <p class=""><span class="stt">9</span></p>
-                <p class=""><span class="stt">1</span></p>
-                <p class=""><span class="stt">1</span></p>
+                <p class=""><span class="stt">5</span>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+                    <span><</span> <span class="chuxanh">/head</span> <span>></span>
+                </p>
+                <p class=""><span class="stt">6</span>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+                    <span><</span> <span class="chuxanh">body</span> <span>></span>
+                </p>
+                <p class=""><span class="stt">7</span>
+                <span><</span> <span class="chuxanh">h1</span> <span>></span> <span>My First Heading</span> <span><</span> <span class="chuxanh">/h1</span> <span>></span>
+                </p>
+                <p class=""><span class="stt">8</span>
+                    <span><</span> <span class="chuxanh">p</span> <span>></span> <span>My First Paragraph</span> <span><</span> <span class="chuxanh">/p</span> <span>></span>
+                    </p>
+                    <p class=""><span class="stt">9</span>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+                        <span><</span> <span class="chuxanh">/body</span> <span>></span>
+                    </p>
+                    <p class=""><span class="stt">0</span> &nbsp; &nbsp; &nbsp;  <span><</span>  <span class="chuxanh">/html</span> <span>></span> </p>
+
                     
             </div>
+            <!--trong đó-->
+            <p class="mt30">Trong đó </p>
+            <ul class="ml10">
+                <li class="mb5"><!DOCTYPE html> <span class="chuxanh" ><</span> <span class="chuxanh">!DOCTYPE html</span> <span class="chuxanh" >></span> là phần khai báo kiểu dữ liệu hiển thị là html để trình duyệt (Browser) biết.</li>
+                <li class="mb5">  <span class="chuxanh"><</span> <span class="chuxanh">html</span> <span class="chuxanh">></span> và
+                    <span class="chuxanh"><</span> <span class="chuxanh">/html</span> <span class="chuxanh">></span> là cặp thẻ nằm ngoài cùng và nó có nhiệm vụ là bao hết nội dung của trang web lại.
+                </li>
+                <li class="mb5">  <span class="chuxanh"><</span> <span class="chuxanh">head</span> <span class="chuxanh">></span> và
+                    <span class="chuxanh"><</span> <span class="chuxanh">/head</span> <span class="chuxanh">></span> là phần khai báo thông tin của trang web.
+                </li>
+                <li class="mb5">  <span class="chuxanh"><</span> <span class="chuxanh">title</span> <span class="chuxanh">></span> và
+                    <span class="chuxanh"><</span> <span class="chuxanh">/title</span> <span class="chuxanh">></span> nằm bên trong thẻ 
+                    <span class="chuxanh"><</span> <span class="chuxanh">head</span> <span class="chuxanh">></span> và đây chính là khai báo tiêu đề cho trang web.
+                </li>
+                <li class="mb5">  <span class="chuxanh"><</span> <span class="chuxanh">body</span> <span class="chuxanh">></span> và
+                    <span class="chuxanh"><</span> <span class="chuxanh">/body</span> <span class="chuxanh">></span> là thành phần quan trọng nhất, nó chứa những đoạn mã HTML  dùng để hiển thị trang web.
+                </li>
+                <li>Các thẻ còn lại nằm trong thẻ <span class="chuxanh"><</span>
+                <span class="chuxanh">body</span><span class="chuxanh">></span> chính là các thẻ định dạng dự liệu</li> 
+            </ul>
+            <p class="mt30"> Như vậy trong một website chúng ta chia làm 2 phần chính </p>
+            <ul class="ml10">
+                <li><span class="chudam mb10">Phần 1</span>: Là những khai báo thông tin cho trang web và ta đặt nó trong thẻ <span class="chuxanh"><</span>
+                <span class="chuxanh">head</span>
+                <span class="chuxanh">></span></li>
+                <li><span class="chudam mb10">Phần 2</span>: Là phần hiển thị định dạng nội dung của trang web và ta đặt trong thẻ <span class="chuxanh"><</span><span class="chuxanh">body</span><span class="chuxanh">></span></li>
+            </ul>
+            <p class="mt30">Và được diễn tả như hình sau :</p>
+            <div class="anh mb30"><img src="./images/bocuc.png" alt="" class="mt30 bocuc"></div>
+            <div class="mucluc">3. Các vị trí thường thấy trong giao diện website</div>
+            <p class="mt30"> Thông thường giao diện của một trang web sẽ được chia thành các phần như sau :</p>
+            <ul class="ml10">
+                <li class="mb5">Header ( <span class="chudo">cố định</span> )</li>
+                <li class="mb5">Footer ( <span class="chudo">cố định</span> )</li>
+                <li class="mb5">Menu ( <span class="chudo">cố định</span> )</li>
+                <li class="mb5">Header ( <span class="chudo">cố định</span> )</li>
+                <li class="mb5 ">Main content ( <span class=" chudam">mỗi trang một khác</span> )</li>
+            </ul>
+            <p class="mt30">Như vậy trong các phần đó thì chỉ có phần  <span class="chuxanh">content</span> là thay đổi ở mỗi trang khác nhau, các phần còn lại thì sẽ không thay đổi. Ví dụ bạn vào trang chủ <span class="chudo">Super Code</span> và trang <span class="chuxanh">Khoá học</span> thì sẽ thấy chỉ có phần nội dung ở giữa là thay đổi  còn bên các phần 
+            <span class="chuxanh">header</span>, <span class="chuxanh">footer</span>,
+            <span class="chuxanh">menu</span>, 
+            <span class="chuxanh">sidebar</span> là không thay đổi.
+            </p>
+            <div class="anh mt30"><img src="./images/html-la-gi-bo-cuc-html-cua-mot-trang-web-2.png" alt=""></div>
+            <p class="mt30">Để chia các vị trí như trên bằng thẻ HTML  thì ta sẽ dùng thẻ div kết hợp với kiến thức trong series <span class="chudo">CSS</span> để định dạng giao diện. Nếu bạn chưa biết thì hãy chờ bài tiếp theo nhé</p>
+
+
+            <div class="mucluc mt30">4. Sử dụng gì để code HTML ?</div>
         </div>
     </div>
 </div>
