@@ -166,7 +166,120 @@
         </div> 
 
         <div id="css2" class="mucluc mt30">2. Cú pháp CSS, các cách viết CSS</div>
+
+        <p class="mt30">Chúng ta vừa mới tìm hiểu được khái niệm <span class="chuxanh">CSS là gì</span> rồi. Vậy thì trong phần này để cho nóng thì ta sẽ tìm hiểu đến cú pháp viết CSS, đồng thời tìm hiểu ba cách trình bày CSS (
+            <span class="chudo">inline</span>,
+            <span class="chudo">external</span>,
+            <span class="chudo">internal</span>
+        )</p>
+
+        <div class="ml25 chudam mt10">2.1 Cú pháp CSS</div>
+        <div class="anh mt30 "><img src="./images/CSS11.png" alt=""></div>
+
+        <p class="mt30">Chúng ta chia một đoạn mã CSS thành 2 phần chính :</p>
+        <ul>
+            <li class="ml10"> <span class="chudam">selector</span>:selector sẽ trỏ đến những đối tượng <span class="chuxanh">HTML</span> chịu ảnh hưởng bởi <span class="chudam">CSS</span></li>
+            <li class="ml10"> <span class="chudam">declaration</span>: Các thuộc tính dùng để style cho thẻ selector</li>
+        </ul>
+
+        <p class="mt30"> <span class="chudam">Ví dụ</span>: Thiết lập màu nền và chữ màu đỏ cho thẻ <span class="chuxanh ml10">H1</span> </p>
+
+        <div class="border mt30">
+            <p class=" ">
+                <span class="stt">1</span> &nbsp;&nbsp; h1 {
+            </p>
+            <p><span class="stt">2</span> <span class="chuxanh">&nbsp; &nbsp; &nbsp;&nbsp;background</span> &nbsp;: red ;</p>
+            <p><span class="stt">3</span> <span class="chuxanh">&nbsp; &nbsp; &nbsp;&nbsp;color</span> &nbsp;: red ;</p>
+            <p class=" ">
+                <span class="stt">4</span> &nbsp;&nbsp; }
+            </p>
+        </div>
+        <p class="mt30 chudam">Trong đó :</p>
+        <ul class="mt30">
+            <li> <span class="chudam">h1</span> là <span class="chuxanh">selector</span></li>
+            <li> Các thuộc tính <span class="chudo">background</span > và <span class="chudo">color</span> chính là <span class="chuxanh">declaration</span></li>
+        </ul>
+        <p class="mt10">Riêng về selector thì mình sẽ trình bày ở phần tiếp theo.</p>
+        <p class="mt10"> Còn đối với declaration thì các bạn để ý bên trong cặp ngoặc { &nbsp;} là danh sách các thuộc tính và giá trị tương ứng theo dạng ( <span class="chudo">Property:Property value</span> )</p> mỗi thuộc tính sẽ kết thuộc bằng dấu chấm phẩy ( <span class="chudo">;</span>  ).
+
+        <div class="chudam mt30">2.2 Các cách viết CSS</div>
+        <p class="mt30"> Ở phần <span class="chudam">Cú pháp CSS</span>
+            có lẽ vẫn còn hơi mờ hồ đúng không nào? Vậy thì phần này sẽ thực sự thú vị hẳn đấy vì chúng ta sẽ tìm hiểu các cách viết <span class="chudam">CSS</span> và những lưu ý khi sử dụng chúng.
+        </p>
+        <p class="mt30">Chúng ta có ba cách viết CSS đó là :</p>
+        <div class="borderk mt30">
+            <ul>
+                <li><span class="chudam">inline</span>: Viết trực tiếp trên thẻ thông qua thuộc tính <span class="chuxanh">style</span></li>
+                <li><span class="chudam">external</span>: Viết riêng một file có đuôi dạng .css rồi sau đó import vào file HTML thông qua thẻ <span class="chuxanh">link</span></li>
+                <li><span class="chudam">internal</span>: Viết trực tiếp tại file HTML hiện tại thông qua thẻ <span class="chuxanh">style</span></li>
+            </ul>
+        </div>
+        <p class="chudam mt30">#INLINE</p>
+        <p class="mt10 mb25">Trong thẻ HTML chúng ta tạo một thuộc tính style="code css".</p>
+        <div class="border">
+            <p><span class="stt">1</span> <span><</span>
+            <span class="chuxanh">div</span> <span class="chudo">style =</span> <span class="chuxanh">"background : red; color : blue ;"</span> <span>></span> Cùng học lập trình miễn phí tại Super Code <span><</span>  <span class="chuxanh">/div</span> <span>></span>
+            </p>
+        </div>
+        <p class="mt10"> Không nên sử dụng phương pháp <span class="chuxanh">inline</span> vì nó khiến ta khó quản lý code và không tốt cho SEO</p>
+
+        <p class="mt30 chudam">#INTERNAL</p>
+        <p class="mb25">Chúng ta sẽ code bên trong thẻ <span><</span> <span class="chuxanh">style</span> type="test/css"> <span class="chudo">Viết code ở đây</span> < <span class="chuxanh">/style</span> >
+        </p>
+
+        <div class="border ">
+            <p><span class="stt">1</span><span><</span> style type= <span class="chuxanh">"text/css"</span> <span>></span> </p>
+            <p><span class="stt">2</span>&nbsp; div {</p>
+            <p><span class="stt">3</span>&nbsp;&nbsp;&nbsp; background :red;</p>
+            <p><span class="stt">4</span>&nbsp;&nbsp;&nbsp;&nbsp;color : blue ;</p>
+            <p><span class="stt">5</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p>
+            <p><span class="stt">7</span> <span><</span>/style></p>
+            <p><span class="stt">8</span>
+                <span><</span> div> HỌC CSS MIỄN PHÍ TẠI SUPER CODE <span><</span> /div>
+            </p>
+        </div>
+        <p class="mt10">Dạng <span class="chudam">internal</span>  có thể chấp nhận được nhưng bạn nên đặt <span class="chudam">CSS</span> ở trên thẻ <span class="chudo">HEAD</span>, dạng này cũng không tốt cho SEO</p>
+
+        <p class="mt30 chudam">#EXTERNAL</p>
+        <p class="mt30">Cách này hơi rườm rà một chút vì chúng ta cần 1 file <span class="chuxanh">style.css</span>
+            ( có phần mở rộng là <span class="chuxanh">.css</span> ) và sau đó import vào file HTML  thông qua thẻ <span class="chuxanh">link</span>. Sau đây là một ví dụ cho cách này.
+        </p>
+        <p class="mt10"><span class="chudam">Bước 1 :</span> Tạo 1 file <span class="chuxanh">style.css</span> với nội dung như sau :</p>
+        <div class="border mt30">
+            <p><span class="stt">1</span>&nbsp; div {</p>
+            <p><span class="stt">2</span>&nbsp;&nbsp;&nbsp;&nbsp;background : red ;</p>
+            <p><span class="stt">3</span> &nbsp;&nbsp;&nbsp;&nbsp;color : blue;</p>
+            <p><span class="stt">4</span> &nbsp;&nbsp;&nbsp;}</p>
+        </div>
+
+        <p class="mt30"><span class="chudam">Bước 2 :</span> Tạo 1 file <span class="chuxanh">index.html</span> cùng cấp với file <span class="chuxanh">style.css</span> với nội dung như sau :</p>
+
+        <div class="border mt30">
+            <p><span class="stt">1</span><span><</span> <span class="chuxanh">link</span>
+            href= <span class="chuxanh">"style.css"</span> rel= <span class="chuxanh">"stylesheet"/</span>>
+            </p>
+                <p><span class="stt">2</span><span><</span>div>  <span>HỌC LẬP TRÌNH MIỄN PHÍ TẠI SUPER CODE</span> <span><</span>/div>
+                
+            </p>
+        </div>
+        <p class="mt30">Sau đó chạy lên các bạn sẽ thấy kết quả cũng không có gì khác so với hai ví dụ trên. Nhưng có một số lưu ý dành cho bạn như sau:</p>
+        <ul class="mt30">
+            <li>Trong thẻ link có một thẻ <span class="chuxanh">href</span>, bạn sẽ <span class="chudam">truyền đường dẫn</span> đến file css của bạn.</li>
+            <li><span class="chuxanh">rel="stylesheet"</span> báo cáo cho trình duyệt biết đây là file <span class="chudam">CSS.</span></li>
+        </ul>
+        
+
+
+
+
+
+
         <div id="css3" class="mucluc mt30">3. Selector là gì? Tìm hiểu Selector cơ bản? </div>
+        <p class="mt30">
+            <span class="chudam">CSS Selector</span> đóng vai trò rất quan trọng khi các bạn code layout cho website, tuy nhiên về các loại  selector thì hơi nhiều nên trong phần này tôi chỉ trình bày một số selector thông dụng và căn bản nhất và hay sử dụng nhất, các vấn đề nâng cao mình sẽ trình bày trong <a href="#"><span class="chudo">khóa học css nâng cao.</span></a>
+        </p>
+
+
         <div id="css4" class="mucluc mt30">4. Thiết lập màu nền với background</div>
         <div id="css5" class="mucluc mt30">5. Các thuộc tính với định dạng text</div>
         <div id="css6" class="mucluc mt30">6. Lời kết</div>
