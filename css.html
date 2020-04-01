@@ -255,10 +255,10 @@
         <p class="mt30"><span class="chudam">Bước 2 :</span> Tạo 1 file <span class="chuxanh">index.html</span> cùng cấp với file <span class="chuxanh">style.css</span> với nội dung như sau :</p>
 
         <div class="border mt30">
-            <p><span class="stt">1</span><span><</span> <span class="chuxanh">link</span>
+            <p><span class="stt">1</span><span>&nbsp;&nbsp;<</span> <span class="chuxanh">link</span>
             href= <span class="chuxanh">"style.css"</span> rel= <span class="chuxanh">"stylesheet"/</span>>
             </p>
-                <p><span class="stt">2</span><span><</span>div>  <span>HỌC LẬP TRÌNH MIỄN PHÍ TẠI SUPER CODE</span> <span><</span>/div>
+                <p><span class="stt">2</span><span>&nbsp;&nbsp;<</span>div>  <span>HỌC LẬP TRÌNH MIỄN PHÍ TẠI SUPER CODE</span> <span><</span>/div>
                 
             </p>
         </div>
@@ -279,8 +279,113 @@
             <span class="chudam">CSS Selector</span> đóng vai trò rất quan trọng khi các bạn code layout cho website, tuy nhiên về các loại  selector thì hơi nhiều nên trong phần này tôi chỉ trình bày một số selector thông dụng và căn bản nhất và hay sử dụng nhất, các vấn đề nâng cao mình sẽ trình bày trong <a href="#"><span class="chudo">khóa học css nâng cao.</span></a>
         </p>
 
+        <div class="mucluc mt30">1. Selector là gì ?</div>
+        <p class="mt30"> <span class="chudam">Selector</span> nếu dịch ra tiếng anh thì có nghĩa là  " người chọn", nhưng trong CSS thì selector dùng để truy vấn đến các thẻ HTML.</p>
+        <p class="mt30">Như các bạn biết trong 1 file HTML thì có rất nhiều thẻ giống nhau và thông thường chúng ta sẽ đặt các <span class="chudo">ID</span>,<span class="chudo">Class</span> cho các thẻ để phân biệt, vì vậy CSS sẽ  dựa vào các <span class="chudo">ID</span>,<span class="chudo">Class</span> để truy xuất tới  các thẻ HTML  và người ta gọi đó là <span class="chuxanh">selector</span>.   </p>
+        <p class="mt30"><span class="chudam">Ví dụ :</span> Truy xuất tới tất cả các thẻ DIV và gán background cho nó màu đỏ</p>
+
+        <div class="border mt30">
+            <p><span class="stt">1</span>&nbsp;&nbsp;div{</p>
+            <p><span class="stt">2</span> &nbsp;background : red;</p>
+            <p><span class="stt">3</span>&nbsp;&nbsp;}</p>
+        </div>
+        <p class="mt30">Quá đơn giản phải không nào. Bây giờ ta sẽ tìm hiểu những loại selector cụ thể thông dụng trong CSS</p>
+        <p style="font-size: 22px;" class="mt30 chudam">Các CSS selector thông dụng</p>
+        <p class="mt30">Có rất nhiều loại selector nhưng trong bài này chúng ta tìm hiểu một vài loại selector hay dùng. Trong bài này chúng ta chỉ tìm hiểu hai cách chính đó là:</p>
+        <div class="borderk mt30">
+            <ul>
+                <li>CSS Selector ID</li>
+                <li>CSS Selector Class</li>
+            </ul>
+        </div>
+
+        <p class="mt30  chudam">Selector ID
+        </p>
+        <p class="mt30">
+            Bạn lưu ý là trong một trang web ID là duy nhất nhé, nghĩa là nếu bạn định nghĩa hai ID giống nhau trong 1 layout thì không đúng chuẩn giao diện của W3C.
+        </p>
+        <p>Giả sử bạn có nhiều thẻ div và bạn muốn viết <span class="chudam">CSS</span> cho một thẻ <span class="chudam">DIV</span> nào đó thôi thì bạn có thể chọn giải pháp là Selector theo <span class="chudo">ID</span> của <span class="chuxanh">HTML</span>. Chúng ta sử dụng dấu thăng (<span class="chudo">#</span>  ) để đại diện cho  <span class="chudo">ID</span> .</p>
+        <div style="background-color: red; color:white;" class="border mt30"><span class="chudam">Ví dụ:</span> Cho background màu đỏ cho div có id ="active"</div>
+        <p class="mt30"><p class="h5">HTML</p></p>
+
+        <div class="borderk mt30">
+            <p><span class="stt">1</span><span>&nbsp;&nbsp;&nbsp;<</span>div id=<span class="chuxanh">"active"</span>></p>
+            <p><span class="stt">2</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ACTIVE</p>
+            <p><span class="stt">3</span><span>&nbsp;&nbsp;&nbsp;<</span>/div></p>
+            <p><span class="stt">4</span><span>&nbsp;&nbsp;&nbsp;<</span>div</span>></p>
+            <p><span class="stt">5</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NON-ACTIVE</p>
+            <p><span class="stt">6</span><span>&nbsp;&nbsp;&nbsp;<</span>/div></p>
+        </div>
+
+        <p class="mt30"><p class="h5">CSS</p></p>
+        <div class="borderk mt30">
+            <p><span class="stt">1</span> &nbsp;#active {</p>
+            <p><span class="stt">2</span> &nbsp; background : red ; </p>
+            <p><span class="stt">3</span> &nbsp;}</p>
+           
+        </div>
+        <p class="mt30">Rất là dễ hiểu đúng không nào, tiếp theo chúng ta sẽ tìm hiểu sang loại selector thứ hai nhé.</p>
+
+
+        <p class="mt30  chudam">Selector Class
+        </p>
+        <p class="mt30">
+            Với <span class="chudo">ID</span> là duy nhất thì <span class="chudo">Class</span> ngược lại, nghĩa là bạn có thể cho nhiều thẻ <span class="chuxanh">HTML</span> có cùng tên <span class="chudo">Class</span>, điều này khá tiện lợi cho <span class="chudam">CSS</span>. Ví dụ bạn cần style cho một số thẻ DIV nào đó thôi thì nếu bạn dùng <span class="chudo">ID</span> thì không hay lắm vì phải viết nhiều lần, chính vì vậy ta sẽ chọn class. Selector cho class sẽ là dấu chấm (.)
+        </p>
+       
+        <div style="background-color: blue; color:white;" class="border mt30"><span class="chudam">Ví dụ:</span> Cho background màu xanh cho div có class ="active"</div>
+        <p class="mt30"><p class="h5">HTML</p></p>
+
+        <div class="borderk mt30">
+            <p><span class="stt">1</span><span>&nbsp;&nbsp;&nbsp;<</span>div class=<span class="chuxanh">"active"</span>></p>
+            <p><span class="stt">2</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ACTIVE</p>
+            <p><span class="stt">3</span><span>&nbsp;&nbsp;&nbsp;<</span>/div></p>
+            <p><span class="stt">4</span><span>&nbsp;&nbsp;&nbsp;<</span>div</span>></p>
+            <p><span class="stt">5</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NON-ACTIVE</p>
+            <p><span class="stt">6</span><span>&nbsp;&nbsp;&nbsp;<</span>/div></p>
+        </div>
+
+        <p class="mt30"><p class="h5">CSS</p></p>
+        <div class="borderk mt30">
+            <p><span class="stt">1</span> &nbsp;.active {</p>
+            <p><span class="stt">2</span> &nbsp; background : blue ; </p>
+            <p><span class="stt">3</span> &nbsp;}</p>
+           
+        </div>
+        <p class="mt30">
+            Còn các <span class="chuxanh">selector</span> nâng cao nhưng mình nghĩ sẽ giới thiệu ở một bài khác vì nếu đưa vào đây luôn thì sẽ hơi rối cho những bạn mới học, khi nao chúng ta nhuần nhuyễn rồi thì học tiếp cũng chưa muộn. Nhưng chung quy lại nếu bạn thuộc các selector căn bản trên là có thể cắt HTMl được rồi đó. Hy vọng qua bài này bạn sẽ hiểu được <span class="chuxanh">selector</span> là gì.
+        </p>
+
+
 
         <div id="css4" class="mucluc mt30">4. Thiết lập màu nền với background</div>
+        <p class="mt30">
+            Trong phần này chúng ta sẽ tìm hiểu cách <span class="chudam">thiết lập màu nền cho các thẻ HTML</span>, đây là một thuộc tính khá quan trọng mà bạn cần phải nắm vững vì hầu hết các trang web đều có sử dụng thuộc tính này để <span class="chudam">tạo background</span> với các màu sắc khác nhau hoặc hình ảnh.
+        </p>
+        <p class="mt30 chudam h5">CSS thiết lập màu nền cho background</p>
+        <p class="mt30">Để thiết lập màu nền cho background thì ta sử dụng thuộc tính CSS <span class="chudo">backgroud-color</span> hoặc <span class="chudo">background</span> với giá trị của nó là màu sắc của <span class="chudam">background</span>. Bạn có thể sử dụng mã màu hoặc tên màu bằng tiếng anh đều được.</p>
+        <div class="border mt30">Ví dụ : Thiết lập background cho toàn trang màu đỏ</div>
+        <p class="mt30">Thẻ mà ta có thể thiết lập  background cho toàn trang là thẻ <span class="chuxanh">body</span> nên ta chỉ cần gán CSS cho nó là được</p>
+        <div class="border mt30">
+            <p><span class="stt">1</span> &nbsp;&nbsp; body {</p>
+            <p><span class="stt">2</span>&nbsp; &nbsp; &nbsp;&nbsp;background : red ;</p>
+            <p><span class="stt">3</span>&nbsp;&nbsp; }</p>
+        </div>
+        <p class="mt10">Hoặc</p>
+        <div class="border mt30">
+            <p><span class="stt">1</span> &nbsp;&nbsp; body {</p>
+            <p><span class="stt">2</span>&nbsp; &nbsp; &nbsp;&nbsp;background : #fb0320 ;</p>
+            <p><span class="stt">3</span>&nbsp;&nbsp; }</p>
+        </div>
+
+        <p class="mt10">Hoặc</p>
+        <div class="border mt30">
+            <p><span class="stt">1</span> &nbsp;&nbsp; body {</p>
+            <p><span class="stt">2</span>&nbsp; &nbsp; &nbsp;&nbsp;background-color : #fb0320 ;</p>
+            <p><span class="stt">3</span>&nbsp;&nbsp; }</p>
+        </div>
+        <button style="background-color: white; width: 100%; height: 200px;" id="do" onclick="do()" class="tryit mt30">Click vào đây để đổi background-color thành màu đỏ</button>
+
         <div id="css5" class="mucluc mt30">5. Các thuộc tính với định dạng text</div>
         <div id="css6" class="mucluc mt30">6. Lời kết</div>
 

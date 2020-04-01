@@ -53,4 +53,13 @@ function closeNav() {
         } 
       });
     }
-   
+   document.getElementById("do").addEventListener("click",hienthi);
+   function hienthi(){
+     if(document.getElementById("do").style.backgroundColor==="white"){
+       document.getElementById("do").style.backgroundColor="red";
+       document.getElementById("do").innerHTML="Click vào đây để đổi background-color thành màu trắng";
+     }else{
+      document.getElementById("do").style.backgroundColor="white";
+      document.getElementById("do").innerHTML="Click vào đây để đổi background-color thành màu đỏ";
+     }
+   }
