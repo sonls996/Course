@@ -9,10 +9,10 @@ $tim: #8e44ad;
 $xanhdatroi: #2980b9;
 $xanhlacay: #27ae60;
 $greensea: #16a085;
+$do: red;
 
 *{
     font-size: 19px;
-    // line-height: 1.6em;
 }
 .container-right{
     top: 100px;
@@ -68,7 +68,7 @@ $greensea: #16a085;
     color: $xanhdatroi;
 }
 .chudo{
-    color: red;
+    color: $do;
 }
 .chumo{
     color: black;
@@ -87,8 +87,25 @@ $greensea: #16a085;
     display: flex;
     justify-content: center;
     img.mt30{
-        width: 50%;
-        height: 300px;
+        width: 80%;
+        height: 500px;
         object-fit: cover;
      }
+}
+.monitor{
+    display: flex;
+    width: 100%;
+    &-column{
+        width: 50%;
+        padding: 20px;
+    }
+}
+.h1{
+    font-size: 2.5rem;
+}
+.h2{
+    font-size: 2.2rem;
+}
+.talc{
+    text-align: center;
 }

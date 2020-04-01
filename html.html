@@ -61,6 +61,7 @@
             <input type="text" placeholder="Search...">
         </div>
         <div class="container-left-wrap__menu">
+            
             <!-- home + giới thiệu-->
             <div class="container-left-wrap__menu-home df">
                 <a href="htmlcssjs.html"> <i class="fas fa-home mr10"></i> Trang chủ</a>
@@ -73,7 +74,7 @@
 
 
             <div class="container-left-wrap__menu-course">
-                <button class="accordion">HTML</button>
+                <button class="accordion"><a href="html.html">HTML</a></button>
                 <div class="panel">
                     <p><a href="#html1">1.HTML là gì ?</a></p>
                     <p><a href="#html2">2.Bố cục HTML của 1 trang web</a></p>
@@ -83,7 +84,7 @@
                     <p><a href="#html6">6.Lời kết </a></p>
                 </div>
 
-                <button class="accordion">CSS</button>
+                <button class="accordion"><a href="css.html">CSS</a></button>
                 <div class="panel">
                     <p><a href="#id1">1.CSS là gì ?</a></p>
                     <p><a href="">2.Cú pháp CSS, các cách viết CSS</a></p>
@@ -93,7 +94,7 @@
                     <p><a href="">6.Lời kết </a></p>
                 </div>
 
-                <button class="accordion">JAVASCRIPT</button>
+                <button class="accordion"><a href="js.html">JAVASCRIPT</a></button>
                 <div class="panel">
                     <p><a href="">1.Javascript là gì ?</a></p>
                     <p><a href="">2.Các cách viết javascript hay gặp </a></p>
@@ -113,6 +114,7 @@
 <!-- nội dung phải-->
 <div class="container-right">
     <div class="container-right-wrap">
+        <p class="h1 pt25 chudam talc">KHÓA HỌC HTML CĂN BẢN</p>
         <div class="container-right-wrap__img">
             <img src="./images/html.png" alt="">
         </div>
@@ -249,7 +251,78 @@
             </ul>
             <p class="mt30">Và được diễn tả như hình sau :</p>
             <div class="anh mb30"><img src="./images/bocuc.png" alt="" class="mt30 bocuc"></div>
-            <div class="mucluc">3. Các vị trí thường thấy trong giao diện website</div>
+            <!-- Một số thẻ cơ bản-->
+            <p class="chudam mt30">Một số thẻ cơ bản trong HTML </p>
+            <p class="  mt10 chudam chudo">Thẻ văn bản</p>
+            <p class="chuxanh mt10 ml25 ">Tiêu đề</p>
+            <p class="mt10 ml50">Đây là các thẻ chỉ định rằng các thành phần nhất định của nội dung là tiêu đề. HTML có tất cả là 6 cấp độ từ <span class="chudo">h1</span> đến <span class="chudo">h6</span> </p>
+            <!-- h1 đến h6-->
+            <div class="border">
+                <p class=""><span class="stt">1</span> <span> <span><</span> <span class="chuxanh">h1</span> <span>></span> <span>Tiêu đề 1</span>
+                <span><</span> <span class="chuxanh">/h1</span> <span>></span>
+                </span></p>
+                <p class=""><span class="stt">2</span> <span> <span><</span> <span class="chuxanh">h2</span> <span>></span> <span>Tiêu đề 2</span>
+                    <span><</span> <span class="chuxanh">/h2</span> <span>></span>
+                    </span></p>
+                 <p class=""><span class="stt">3</span> <span> <span><</span> <span class="chuxanh">h3</span> <span>></span> <span>Tiêu đề 3</span>
+                        <span><</span> <span class="chuxanh">/h3</span> <span>></span>
+                        </span></p>
+                 <p class=""><span class="stt">4</span> <span> <span><</span> <span class="chuxanh">h4</span> <span>></span> <span>Tiêu đề 4</span>
+                            <span><</span> <span class="chuxanh">/h4</span> <span>></span>
+                            </span></p>
+                 <p class=""><span class="stt">5</span> <span> <span><</span> <span class="chuxanh">h5</span> <span>></span> <span>Tiêu đề 5</span>
+                                <span><</span> <span class="chuxanh">/h5</span> <span>></span>
+                                </span></p>
+                 <p class=""><span class="stt">6</span> <span> <span><</span> <span class="chuxanh">h6</span> <span>></span> <span>Tiêu đề </span>
+                                    <span><</span> <span class="chuxanh">/h6</span> <span>></span>
+                                    </span></p>
+            </div>
+
+
+            <p class="mt10">Và kết quả sẽ được hiển thị như sau</p>
+            <div class="borderk">
+                <span>
+                    <h1 class="mt10 h1">Tiêu đề 1</h1>
+                    <h2 class="h2">Tiêu đề 2</h2>
+                    <h3 class="h3">Tiêu đề 3</h3>
+                    <h4 class="h4">Tiêu đề 4</h4>
+                    <h5 class="h5">Tiêu đề 5</h5>
+                    <h6 class="h6">Tiêu đề 6</h6>
+    
+                </span>
+            </div>
+            <p class="mt30 ml25 chuxanh">Danh sách</p>
+            <p class="mt30"> <span class="chudam">Danh sách không được đánh số từ 1,</span>  <span> chúng được bọc trong cặp thẻ <span>
+                <span class="chudo">ul</span>
+            </span></span></p>
+
+            <div class="border mt10">
+                <p class=""><span class="stt">0</span> <span> <span><</span> <span class="chuxanh">p</span> <span>></span> <span>Danh sách không được đánh số từ 1 </span>
+                    <span><</span> <span class="chuxanh">/p</span> <span>></span>
+                    </span></p>
+                    <p><span class="stt">1</span> <span><</span> <span class="chuxanh">ul</span> <span>></span></p>
+                    <p><span class="stt">2</span> &nbsp; &nbsp;&nbsp; <span><</span> <span class="chuxanh">li</span> <span>></span> <span>Danh sách 1</span>
+                    <span><</span> <span class="chuxanh">/li</span> <span>></span>
+                    </p>
+                    <p><span class="stt">3</span> &nbsp; &nbsp;&nbsp; <span><</span> <span class="chuxanh">li</span> <span>></span> <span>Danh sách 2</span>
+                        <span><</span> <span class="chuxanh">/li</span> <span>></span>
+                        </p>
+                    <p><span class="stt">4</span> &nbsp; &nbsp;&nbsp; <span><</span> <span class="chuxanh">li</span> <span>></span> <span>Danh sách 3</span>
+                            <span><</span> <span class="chuxanh">/li</span> <span>></span>
+                            </p>
+                    <p><span class="stt">5</span> <span><</span> <span class="chuxanh">/ul</span> <span>></span></p>
+            </div>
+            <p class="mt10 mb10 chuxanh">và kết quả hiển thị sẽ là:</p>
+            <div class="borderk">
+                <ul>
+                    <p>Danh sách không được đánh số từ 1</p>
+                    <li>Danh sách 1</li>
+                    <li> Danh sách 2</li>
+                    <li> Danh sách 3</li>
+                </ul>
+            </div>
+
+            <div class="mucluc mt30">3. Các vị trí thường thấy trong giao diện website</div>
             <p class="mt30"> Thông thường giao diện của một trang web sẽ được chia thành các phần như sau :</p>
             <ul class="ml10">
                 <li class="mb5">Header ( <span class="chudo">cố định</span> )</li>
@@ -268,7 +341,48 @@
 
 
             <div class="mucluc mt30">4. Sử dụng gì để code HTML ?</div>
+            <p class="mt30">HTML cũng chỉ là một file bình thường nên mọi editor  đọc text đều có thể sử dụng để code như <span class="chuxanh">notepad</span>,
+            <span class="chuxanh">noted++</span>,
+            <span class="chuxanh">neatbeans</span>,
+            <span class="chuxanh"></span>sublimetext</p>, <span class="chuxanh">Visual Studio Code</span> ..... Tuy nhiên trong loạt series này thì mình sử dụng <span class="chuxanh">Visual Code</span> để code.
+            <p class="mt30 mb30">Ví vụ hình ảnh về <span class="chuxanh">Visual Studio Code</span></p>
+            <div class="anh"><img src="./images/vsc.jpg" alt=""></div>
+            <div class="mucluc mt30">5. Ví dụ cụ thể</div>
+            <p class="chudo ml25 mt10">Dùng những kiến thức HTML đã học, in ra màn hình danh sách nhân viên phòng công nghệ công ty I&E</p>
+            <div class="monitor">
+                <div class="monitor-column">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="
+                    Ví dụ :
+                    <h1> Danh sách nhân sự phòng công nghệ </h1>
+                    <ul> 
+                        <li> Nguyễn Đăng Bằng </li>
+                        <li> Lê Thành Đô </li>
+                        <li> Lê Văn Bảy </li>
+                        <li> Trần Thị Quỳnh </li>
+                        <li> Lee Hoong Soon </li>
+                    </ul>
+                    "></textarea>
+                </div>
+                <div class="monitor-column ">
+                    <div class="border">
+                        <h1 class="h1"> Danh sách nhân sự phòng công nghệ</h1>
+                        <ul>
+                            <li>Nguyễn Đăng Bằng</li>
+                            <li>Lê Thành Đô</li>
+                            <li>Lê Văn Bảy</li>
+                            <li>Trần Thị Quỳnh</li>
+                            <li> Lee Hoong Soon</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <p class="chuxanh talc"> Kết quả sẽ in ra danh sách nhân sự  phòng công nghệ</p>
+            <div class="mucluc mt30">6. Lời kết </div>
+            <p class="mt30"> Qua bài này mình đã giới thiệu xong các khái niệm căn bản của HTML, đồng thời bạn cũng biết được các thành phần chính tạo nên website, hẹn gặp lại các bạn trong các phần tiếp theo.</p>
+            <div class="border mt30">Tham khảo</div>
+            <div class="borderk chudo"> <a title="tìm hiểu thêm về HTML" href="">Hãy nêu các thẻ HTML chính trong một trang web</a></div>
         </div>
+        <p class=" mt30 mb50 talc chudam chuxanh"><a href="css.html">Tiếp theo : Khóa học CSS căn bản</a></p>
     </div>
 </div>
 
