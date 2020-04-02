@@ -13,6 +13,7 @@ $do: red;
 
 *{
     font-size: 19px;
+    
 }
 .container-right{
     top: 100px;
@@ -25,7 +26,7 @@ $do: red;
     z-index: -2;
     &-wrap{
         width: 80%;
-        margin: 0 auto;
+        margin: 30px auto;
         &__img{
             margin: 70px 0;
             width: 100%;
@@ -39,6 +40,20 @@ $do: red;
 
     }
 }
+
+.thcss{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn{
+    padding: 5px 10px;
+}
+
+
 .border{
     background-color: #F9F9F9;
     padding: 20px;

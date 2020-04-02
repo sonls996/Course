@@ -14,7 +14,7 @@
 
 .container-right-wrap {
   width: 80%;
-  margin: 0 auto;
+  margin: 30px auto;
 }
 
 .container-right-wrap__img {
@@ -28,6 +28,27 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.thcss {
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.btn {
+  padding: 5px 10px;
 }
 
 .border {

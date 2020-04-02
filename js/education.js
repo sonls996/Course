@@ -63,3 +63,18 @@ function closeNav() {
       document.getElementById("do").innerHTML="Click vào đây để đổi background-color thành màu đỏ";
      }
    }
+
+
+   function upper(){
+     document.getElementById("textChange").style.textTransform="uppercase";
+     document.getElementById("textChange").innerHTML="Nội dung đã được chuyển thành chữ in hoa";
+   }
+   function lower(){
+    document.getElementById("textChange").style.textTransform="lowercase";
+    document.getElementById("textChange").innerHTML="Nội dung đã được chuyển thành chữ thường";
+  }
+  function none(){
+    document.getElementById("textChange").style.textTransform="none";
+    document.getElementById("textChange").innerHTML="Nội dung đã được chuyển về mặc định";
+  }
+  

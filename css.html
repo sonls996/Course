@@ -75,12 +75,12 @@
             <div class="container-left-wrap__menu-course">
                 <button class="accordion"><a href="html.html">HTML</a></button>
                 <div class="panel">
-                    <p><a href="#html1">1.HTML là gì ?</a></p>
-                    <p><a href="#html2">2.Bố cục HTML của 1 trang web</a></p>
-                    <p><a href="#html3">3.Các vị trí thường thấy trong giao diện website</a></p>
-                    <p><a href="#html4">4.Sử dụng gì để viết HTML</a></p>
-                    <p><a href="#html5">5.Ví dụ cụ thể</a></p>
-                    <p><a href="#html6">6.Lời kết </a></p>
+                    <p><a href="html.html">1.HTML là gì ?</a></p>
+                    <p><a href="html.html">2.Bố cục HTML của 1 trang web</a></p>
+                    <p><a href="html.html">3.Các vị trí thường thấy trong giao diện website</a></p>
+                    <p><a href="html.html">4.Sử dụng gì để viết HTML</a></p>
+                    <p><a href="html.html">5.Ví dụ cụ thể</a></p>
+                    <p><a href="html.html">6.Lời kết </a></p>
                 </div>
 
                 <button class="accordion"><a href="css.html">CSS</a></button>
@@ -95,11 +95,11 @@
 
                 <button class="accordion"><a href="js.html">JAVASCRIPT</a></button>
                 <div class="panel">
-                    <p><a href="">1.Javascript là gì ?</a></p>
-                    <p><a href="">2.Các cách viết javascript hay gặp </a></p>
-                    <p><a href="">3.Viết chương trình Hello World !</a></p>
-                    <p><a href="">4.Các thư viện đình đám hiện nay</a></p>
-                    <p><a href="">5.Lời kết </a></p>
+                    <p><a href="js.html">1.Javascript là gì ?</a></p>
+                    <p><a href="js.html">2.Các cách viết javascript hay gặp </a></p>
+                    <p><a href="js.html">3.Viết chương trình Hello World !</a></p>
+                    <p><a href="js.html">4.Các thư viện đình đám hiện nay</a></p>
+                    <p><a href="js.html">5.Lời kết </a></p>
                 </div>
             </div>
         </div>
@@ -385,12 +385,91 @@
             <p><span class="stt">3</span>&nbsp;&nbsp; }</p>
         </div>
         <button style="background-color: white; width: 100%; height: 200px;" id="do" onclick="do()" class="tryit mt30">Click vào đây để đổi background-color thành màu đỏ</button>
+        <p class="mt30">Trong bài này chủ yếu tìm hiểu  thuộc tính CSS xử lý background, nhưng vẫn còn nhiều thuộc tính nữa nhưng không trình bày nó trong bài này, bạn phải học từ từ mới thấm trong người được chứ vội quá quên hết. Chúc các ban học CSS vui vẻ :D</p>
 
         <div id="css5" class="mucluc mt30">5. Các thuộc tính với định dạng text</div>
-        <div id="css6" class="mucluc mt30">6. Lời kết</div>
+
+        <p class="mt30">
+            CSS cung cấp cho chúng ta một số thuộc tính định dạng text như màu sắc, hiển thị chữ in hoa hoặc in thường, vị trí hiển thị, ... Những thuộc tính này khá hay và rất quan trọng vì nó quyết định tính thẩm mỹ cho các dòng chữ trong website.
+        </p>
+        <p class="mt30 chudam">
+            Trong bài chúng ta tìm hiểu một số thuộc tính định dạng cho text như sau:
+        </p>
+        <div class="border mt30">
+            <li class="chudo">color</li>
+            <li class="chudo">text-transform</li>
+        </div>
+        <p class="mt30 chudam">- Chọn màu cho chữ với thuộc tính <span class="chuxanh">Color</span></p>
+        <p class="mt30">Ta sử dụng thuộc tính color để gán màu sắc cho chữ</p>
+        <p class="mt30">Trong CSS thì ta sử dụng 3 cách biểu diễn color như sau:</p>
+        <div class="borderk">
+            <ul>
+                <li><span class="chuxanh">HEX</span> : có định dạng <span class="chuxanh">#mã-màu</span></li>
+                <li><span class="chuxanh">RGB</span> : có định dạng <span class="chuxanh">rgb(xxx,yyy,zzz)</span></li>
+                <li><span class="chuxanh">Tên màu</span> : ví dụ <span class="chuxanh">red, blue</span></li>
+            </ul>
+        </div>
+        <div class="border mt30"><span class="chudam">Ví dụ </span> : Thiết lập màu chữ cho ba class <span style="color: red;" class="chuxanh">color--red</span>,
+        <span style="color: blue;" class="chuxanh">color--blue</span>,
+        <span style="color: pink;" class="chuxanh">color--pink</span></div>
+        <div class="borderk mt30">
+            <p style="color: red;"><span class="stt">1</span>.color--red {</p>
+            <p style="color: red;"><span class="stt">2</span>&nbsp;&nbsp;&nbsp; color : red ;</p>
+            <p style="color: red;"><span class="stt">3</span>&nbsp;&nbsp;}</p>
+            <p style="color: blue;"><span class="stt">4</span>.color--blue {</p>
+            <p style="color: blue;"><span class="stt">5</span>&nbsp;&nbsp;&nbsp;color : #2980b9 ; </p>
+            <p style="color: blue;"><span class="stt">6</span>&nbsp;&nbsp;}</p>
+            <p style="color: pink;"><span class="stt">7</span>.color--pink {</p>
+            <p style="color: pink;"><span class="stt">8</span>&nbsp;&nbsp;&nbsp;color : rgb rgb(255, 192, 203);</p>
+            <p style="color: pink;"><span class="stt">9</span>&nbsp;&nbsp;}</p>
+        </div>
+
+        <p class="mt30 chudam">- Thiết lập chữ in hoa mà in thường </p>
+        <p class="mt30">Nếu bạn muốn một thẻ nào đó luôn luôn hiển thị in hoa hoặc luôn luôn hiển thị in thường mặc dù ta nhập vào là hoa hay thường thì sử dụng thuộc tính <span class="chudo">text-transform</span> với các thuộc tính:</p>
+        <div class="borderk mt30">
+            <ul>
+                <li><span class="chudam">uppercase</span>: chuyển đổi in hoa</li>
+                <li><span class="chudam">lowercase</span>: chuyển đổi in thường</li>
+                <li><span class="chudam">none</span>: không chuyển đổi gì cả</li>
+            </ul>
+        </div>
+
+        <div class="border mt30">
+            <span class="chudam">Ví dụ </span>: Dùng kiến thức vừa học, chuyển đổi chữ thành chữ in hoa và in thường
+        </div>
+        <div class="borderk mt30">
+            <p><span class="stt">1</span>&nbsp;.uppercase {</p>
+            <p><span class="stt">2</span> &nbsp;&nbsp;&nbsp; text-transform : uppercase ;</p>
+            <p><span class="stt">3</span>&nbsp;&nbsp;}</p>
+            <p><span class="stt">4</span>&nbsp;.lowercase {</p>
+            <p><span class="stt">5</span>&nbsp;&nbsp;&nbsp; text-transform : lowercase ;</p>
+            <p><span class="stt">6</span>&nbsp;&nbsp;}</p>
+            <p><span class="stt">7</span>&nbsp;.none {</p>
+            <p><span class="stt">8</span>&nbsp;&nbsp;&nbsp; text-transform : none ;</p>
+            <p><span class="stt">9</span>&nbsp;&nbsp;}</p>
+        </div>
+        <!-- thực hành css-->
+        <div   class="borderk thcss">
+            <p id="textChange" style="text-transform: none; text-align: center;">Nội dung sẽ thay đổi</p>
+            <div>
+                <button class="btn" onclick="upper()">Uppercase</button>
+                <button class="btn" style="margin-left: 20px;" onclick="lower()">Lowercase</button>
+                <button class="btn" style="margin-left: 20px;" onclick="none()">None</button>
+            </div>
+            </div>
 
 
 
+            <div class="mucluc mb30 mt30">6. Lời kết</div>
+            <p class="mt30">
+                Qua tất cả các phần ở trên, mình đã giới thiệu xong các khái niệm căn bản của CSS, giới thiệu được cách viết CSS như thế nào, cách sử dụng chúng ra sao và mốt số thuộc tính CSS cơ bản, tất cả chỉ mới là bắt đầu :D , hẹn gặp lại các bạn trong các phần tiếp theo, hứa hẹn sẽ hay hơn và hấp dẫn hơn.
+            </p>
+            <div class="border mt30">Tham khảo</div>
+            <div class="borderk chudo"> <a title="tìm hiểu thêm về HTML" href="">Khóa học CSS nâng cao ( Coming soon)</a></div>
+            <p class=" mt30 mb50 talc chudam chuxanh"><a href="css.html">Tiếp theo : Khóa học Javascript căn bản</a></p>
+        </div>
+
+        
 
         <!-- nội dung hết-->
     </div>
