@@ -48,8 +48,8 @@
         <div class="logo-text">
             <a href="#">Code Super</a>
         </div>
-        <div onclick="openNav()" class="mobile-menu mr25 ">
-            <i style="color: white;font-size: 26px; line-height: 10vh;" class="fas fa-bars mr10"></i>
+        <div  class="mobile-menu mr25 ">
+            <i id="colapsee" style="color: white;font-size: 26px; line-height: 10vh;" class="fas fa-bars mr10"></i>
         </div>
     </div>
 </div>
@@ -63,8 +63,8 @@
         <div class="container-left-wrap__menu">
             <!-- home + giới thiệu-->
             <div class="container-left-wrap__menu-home df">
-                <a href="htmlcssjs.html"> <i class="fas fa-home mr10"></i> Trang chủ</a>
-                <a href="#"> <i class="fas fa-globe mr10"></i> Giới thiệu</a>
+                <a href="index.html"> <i class="fas fa-home mr10"></i> Trang chủ</a>
+                <a href="htmlcssjs.html"> <i class="fas fa-globe mr10"></i> Giới thiệu</a>
             </div>
             <!-- home + giới thiệu end-->
             <div class="container-left-wrap__menu-home df mt50">
@@ -147,7 +147,11 @@
             <span class="chudam">HTML & CSS.</span>
         </p>
 
-        <p class="chudam">Gom nhóm các thể loại của CSS</p>
+        <p class="mt30">
+            Có một ví dụ trực quan để diễn tả nhiệm vụ của <span class="chudam">CSS</span> như sau, giả sử bạn xây nhà và bạn sẽ sử dụng gạch để xây dựng ngôi nhà. Nhưng để trang trí cho ngôi nhà thì bạn sẽ sử dụng một số đồ nội thất khác như sơn màu, ... thì lúc này sơn màu sẽ tác động làm thay đổi color mặc định của gạch. Nói ví von thi màu sơn chính là <span class="chudam">CSS</span> và gạch chính là <span class="chudam">HTML</span>.
+        </p>
+
+        <p class="chudam mt30">Gom nhóm các thể loại của CSS</p>
 
         <p class="mt30"> <span class="chudam">CSS</span> có nhiều kiểu nhưng gom lại thì chúng ta sẽ có các thể loại
             <span class="chudam">CSS</span> như sau :</p>
@@ -465,8 +469,8 @@
                 Qua tất cả các phần ở trên, mình đã giới thiệu xong các khái niệm căn bản của CSS, giới thiệu được cách viết CSS như thế nào, cách sử dụng chúng ra sao và mốt số thuộc tính CSS cơ bản, tất cả chỉ mới là bắt đầu :D , hẹn gặp lại các bạn trong các phần tiếp theo, hứa hẹn sẽ hay hơn và hấp dẫn hơn.
             </p>
             <div class="border mt30">Tham khảo</div>
-            <div class="borderk chudo"> <a title="tìm hiểu thêm về HTML" href="">Khóa học CSS nâng cao ( Coming soon)</a></div>
-            <p class=" mt30 mb50 talc chudam chuxanh"><a href="css.html">Tiếp theo : Khóa học Javascript căn bản</a></p>
+            <div class="borderk chudo"> <a title="tìm hiểu thêm về HTML" href="comingsoon.html">Khóa học CSS nâng cao ( Coming soon)</a></div>
+            <p class=" mt30 mb50 talc chudam chuxanh"><a href="js.html">Tiếp theo : Khóa học Javascript căn bản</a></p>
         </div>
 
         
@@ -475,9 +479,19 @@
     </div>
 </div>
 
-
+<div id="colapseMenu" class="colapse">
+    <div class="item "><a href="index.html">TRANG CHỦ</a></div>
+    <div class="item "><a href="htmlcssjs.html">GIỚI THIỆU</a></div>
+    <div class="item "><a href="html.html">HTML CƠ BẢN</a></div>
+    <div class="item "><a href="css.html">CSS CƠ BẢN</a></div>
+    <div class="item "><a href="js.html">JAVASCRIPT CƠ BẢN</a></div>
+    <div class="btnn">
+        <input type="text" placeholder="Tìm kiếm...">
+        <button><i class="fas fa-search"></i></button>
+     </div>
+ </div>
 <!-- my slider menu-->
-<div id="mySidebar" class="nav__tablet-wrap">
+<!-- <div id="mySidebar" class="nav__tablet-wrap">
     <div class="nav__tablet-wrap-account">
         <div onclick="closeNav()" class="closeNav" title="Bấm vào để đóng">x</div>
         <div class="nav__tablet-wrap-account__icon">
@@ -510,7 +524,7 @@
         <a href="#">Hỗ trợ <span><i class="fas fa-phone-volume"></i> 0398473263</span></a>
         <a href="#">Tải ứng dụng</a>
     </div>
-</div>
+</div> -->
 <!-- menu ngang hidden end-->
 
 <body>
@@ -520,6 +534,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script src="js/education.js"></script>
+    <script src="./js/ex.js"></script>
     <!-- CDN Javascript and Bootstrap---------------------------------------------------------- end  -->
 </body>
 

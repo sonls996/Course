@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Khóa học</title>
+    <title>Tổng quan</title>
     <script src="https://kit.fontawesome.com/f1bce2ab63.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap" rel="stylesheet">
@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./sass/inevn.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./sass/htmlcssjs.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 </head>
 
 <!-- menu chính-->
@@ -47,8 +48,8 @@
         <div class="logo-text">
             <a href="#">Code Super</a>
         </div>
-        <div onclick="openNav()" class="mobile-menu mr25 ">
-            <i style="color: white;font-size: 26px; line-height: 10vh;" class="fas fa-bars mr10"></i>
+        <div   class="mobile-menu mr25 ">
+            <i id="colapsee" style="color: white;font-size: 26px; line-height: 10vh;" class="fas fa-bars mr10"></i>
         </div>
     </div>
 </div>
@@ -62,8 +63,8 @@
         <div class="container-left-wrap__menu">
             <!-- home + giới thiệu-->
             <div class="container-left-wrap__menu-home df">
-                <a href="htmlcssjs.html"> <i class="fas fa-home mr10"></i> Trang chủ</a>
-                <a href="#"> <i class="fas fa-globe mr10"></i> Giới thiệu</a>
+                <a href="index.html"> <i class="fas fa-home mr10"></i> Trang chủ</a>
+                <a href="htmlcssjs.html"> <i class="fas fa-globe mr10"></i> Giới thiệu</a>
             </div>
             <!-- home + giới thiệu end-->
             <div class="container-left-wrap__menu-home df mt50">
@@ -110,12 +111,60 @@
 
 
 <!-- nội dung phải-->
-<div class="container-right">
+<div class="container-rightt">
+    <div class="title">
+        <h1>TỰ MÌNH TẠO WEBSITE CHO  RIÊNG MÌNH Ư ?</h1>
+        <p class=" slo">Vâng, chúng ta ai cũng bồn chồn khi bắt đầu,không biết bắt đầu từ đâu, không biết cần gì để tạo nên một website cho riêng bản thân mình, nhưng tôi khuyên bạn xem qua những điều dưới đây (đừng lo, chúng không làm bạn tốn hơn 15 phút đâu). Tuy nhiên, trong trường hợp bạn quá háo hức với việc xây dựng trang web và muốn <span class="chudo"><a href="html.html">BẮT ĐẦU NGAY LẬP TỨC</a></span>, chỉ việc lăn chuột xuống phía dưới sẽ thấy bạn cần.</p>
+    </div>
+    <div class="bocc">
+        <div class="circle">
+            <div class="circle-wrap"><img src="./images/hiclipart.com (5).png" alt=""></div>
+            <div class="circle-info">
+                <p>HTML là chữ viết tắt của Hypertext Markup Language. Nó giúp người dùng tạo và cấu trúc các thành phần trong trang web hoặc ứng dụng, phân chia các đoạn văn, heading, links, blockquotes, ...
+    
+                    HTML không phải là ngôn ngữ lập trình, đồng nghĩa với việc nó không thể tạo ra các chức năng “động” được. Nó chỉ giống như Microsoft Word, dùng để bố cục và định dạng trang web</p>
+
+                    <div class="xemthem"><a href="html.html ">Xem chi tiết</a></div>
+            </div>
+        </div>
+        <div class="circle">
+            <div class="circle-wrap"><img src="./images/hiclipart.com (4).png" alt=""></div>
+            <div class="circle-info">
+                <p>CSS là ngôn ngữ tạo phong cách cho trang web – Cascading Style Sheet language. Nó dùng để tạo phong cách và định kiểu cho những yếu tố được viết dưới dạng ngôn ngữ đánh dấu, như là HTML. Nó có thể điều khiển định dạng của nhiều trang web cùng lúc để tiết kiệm công sức cho người viết web. Nó phân biệt cách hiển thị của trang web với nội dung chính của trang bằng cách điều khiển bố cục, màu sắc, và font chữ.</p>
+                <div class="xemthem"><a href="css.html ">Xem chi tiết</a></div>
+    
+                
+            </div>
+        </div>
+        <div class="circle">
+            <div class="circle-wrap"><img src="./images/hiclipart.com (6).png" alt=""></div>
+            <div class="circle-info">
+                <p>JavaScript: Cải thiện cách hoạt động của trang web.
+                    JavaScript là ngôn ngữ lập trình phổ biến nhất trên thế giới trong suốt 20 năm qua. Nó cũng là một trong số 3 ngôn ngữ chính của lập trình web.
+                    JavaScript có thể học nhanh và dễ dàng áp dụng cho nhiều mục đích khác nhau, từ việc cải thiện tính năng của website đến việc chạy game và tạo phần mềm nền web.</p>
+                                            
+                    <div class="xemthem"><a href="js.html ">Xem chi tiết</a></div>
+                                                
+            </div>
+        </div>
+    </div>
 </div>
 
 
+<div id="colapseMenu" class="colapse">
+   <div class="item "><a href="index.html">TRANG CHỦ</a></div>
+   <div class="item "><a href="htmlcssjs.html">GIỚI THIỆU</a></div>
+   <div class="item "><a href="html.html">HTML CƠ BẢN</a></div>
+   <div class="item "><a href="css.html">CSS CƠ BẢN</a></div>
+   <div class="item "><a href="js.html">JAVASCRIPT CƠ BẢN</a></div>
+   <div class="btnn">
+       <input type="text" placeholder="Tìm kiếm...">
+       <button><i class="fas fa-search"></i></button>
+    </div>
+</div>
+
 <!-- my slider menu-->
-<div id="mySidebar" class="nav__tablet-wrap">
+<!-- <div id="mySidebar" class="nav__tablet-wrap">
     <div class="nav__tablet-wrap-account">
         <div onclick="closeNav()" class="closeNav" title="Bấm vào để đóng">x</div>
         <div class="nav__tablet-wrap-account__icon">
@@ -148,7 +197,7 @@
         <a href="#">Hỗ trợ <span><i class="fas fa-phone-volume"></i> 0398473263</span></a>
         <a href="#">Tải ứng dụng</a>
     </div>
-</div>
+</div> -->
 <!-- menu ngang hidden end-->
 
 <body>
@@ -158,6 +207,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script src="js/education.js"></script>
+    <script src="js/ex.js"></script>
     <!-- CDN Javascript and Bootstrap---------------------------------------------------------- end  -->
 </body>
 

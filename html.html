@@ -48,8 +48,8 @@
         <div class="logo-text">
             <a href="#">Code Super</a>
         </div>
-        <div onclick="openNav()" class="mobile-menu mr25 ">
-            <i style="color: white;font-size: 26px; line-height: 10vh;" class="fas fa-bars mr10"></i>
+        <div  class="mobile-menu mr25 ">
+            <i id="colapsee" style="color: white;font-size: 26px; line-height: 10vh;" class="fas fa-bars mr10"></i>
         </div>
     </div>
 </div>
@@ -64,8 +64,8 @@
             
             <!-- home + giới thiệu-->
             <div class="container-left-wrap__menu-home df">
-                <a href="htmlcssjs.html"> <i class="fas fa-home mr10"></i> Trang chủ</a>
-                <a href="#"> <i class="fas fa-globe mr10"></i> Giới thiệu</a>
+                <a href="index.html"> <i class="fas fa-home mr10"></i> Trang chủ</a>
+                <a href="htmlcssjs.html"> <i class="fas fa-globe mr10"></i> Giới thiệu</a>
             </div>
             <!-- home + giới thiệu end-->
             <div class="container-left-wrap__menu-home df mt50">
@@ -79,7 +79,7 @@
                     <p><a href="#html1">1.HTML là gì ?</a></p>
                     <p><a href="#html2">2.Bố cục HTML của 1 trang web</a></p>
                     <p><a href="#html3">3.Các vị trí thường thấy trong giao diện website</a></p>
-                    <p><a href="#htm4">4.Sử dụng gì để viết HTML</a></p>
+                    <p><a href="#html4">4.Sử dụng gì để viết HTML</a></p>
                     <p><a href="#html5">5.Ví dụ cụ thể</a></p>
                     <p><a href="#html6">6.Lời kết </a></p>
                 </div>
@@ -198,24 +198,24 @@
                 </p>
                 <p class=""><span class="stt">4</span>
                 </span>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span><</span> <span class="chuxanh">title</span> <span>></span> <span>Page Title</span> <span><</span> <span class="chuxanh">/title</span> <span>></span>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span><</span> <span class="chuxanh">title</span> <span>></span> <span>Page Title</span> <span><</span> <span class="chuxanh">/title</span> <span>></span>
                 </p>
                 <p class=""><span class="stt">5</span>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
                     <span><</span> <span class="chuxanh">/head</span> <span>></span>
                 </p>
                 <p class=""><span class="stt">6</span>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+                    &nbsp;&nbsp;&nbsp;&nbsp;
                     <span><</span> <span class="chuxanh">body</span> <span>></span>
                 </p>
-                <p class=""><span class="stt">7</span>
+                <p class=""><span class="stt">7</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <span><</span> <span class="chuxanh">h1</span> <span>></span> <span>My First Heading</span> <span><</span> <span class="chuxanh">/h1</span> <span>></span>
                 </p>
-                <p class=""><span class="stt">8</span>
+                <p class=""><span class="stt">8</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <span><</span> <span class="chuxanh">p</span> <span>></span> <span>My First Paragraph</span> <span><</span> <span class="chuxanh">/p</span> <span>></span>
                     </p>
                     <p class=""><span class="stt">9</span>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+                        &nbsp;&nbsp;&nbsp;&nbsp;
                         <span><</span> <span class="chuxanh">/body</span> <span>></span>
                     </p>
                     <p class=""><span class="stt">0</span> &nbsp; &nbsp; &nbsp;  <span><</span>  <span class="chuxanh">/html</span> <span>></span> </p>
@@ -351,7 +351,7 @@
             <p class="chudo ml25 mt10">Dùng những kiến thức HTML đã học, in ra màn hình danh sách nhân viên phòng công nghệ công ty I&E</p>
             <div class="monitor">
                 <div class="monitor-column">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="
+                    <textarea onkeyup="getVA()" name="" id="tare" cols="30" rows="10" placeholder="
                     Ví dụ :
                     <h1> Danh sách nhân sự phòng công nghệ </h1>
                     <ul> 
@@ -364,7 +364,7 @@
                     "></textarea>
                 </div>
                 <div class="monitor-column ">
-                    <div class="border">
+                    <div id="box" class="border kakaka">
                         <h1 class="h1"> Danh sách nhân sự phòng công nghệ</h1>
                         <ul>
                             <li>Nguyễn Đăng Bằng</li>
@@ -380,15 +380,28 @@
             <div id="html6" class="mucluc mt30">6. Lời kết </div>
             <p class="mt30"> Qua bài này mình đã giới thiệu xong các khái niệm căn bản của HTML, đồng thời bạn cũng biết được các thành phần chính tạo nên website, hẹn gặp lại các bạn trong các phần tiếp theo.</p>
             <div class="border mt30">Tham khảo</div>
-            <div class="borderk chudo"> <a title="tìm hiểu thêm về HTML" href=""> Khóa học HTML/HTML5 qua project thực tế (Coming soon)</a></div>
+            <div class="borderk chudo"> <a title="tìm hiểu thêm về HTML" href="comingsoon.html"> Khóa học HTML/HTML5 qua project thực tế (Coming soon)</a></div>
         </div>
         <p class=" mt30 mb50 talc chudam chuxanh"><a href="css.html">Tiếp theo : Khóa học CSS căn bản</a></p>
     </div>
 </div>
 
 
+
+<div id="colapseMenu" class="colapse">
+    <div class="item "><a href="index.html">TRANG CHỦ</a></div>
+    <div class="item "><a href="htmlcssjs.html">GIỚI THIỆU</a></div>
+    <div class="item "><a href="html.html">HTML CƠ BẢN</a></div>
+    <div class="item "><a href="css.html">CSS CƠ BẢN</a></div>
+    <div class="item "><a href="js.html">JAVASCRIPT CƠ BẢN</a></div>
+    <div class="btnn">
+        <input type="text" placeholder="Tìm kiếm...">
+        <button><i class="fas fa-search"></i></button>
+     </div>
+ </div>
+
 <!-- my slider menu-->
-<div id="mySidebar" class="nav__tablet-wrap">
+<!-- <div id="mySidebar" class="nav__tablet-wrap">
     <div class="nav__tablet-wrap-account">
         <div onclick="closeNav()" class="closeNav" title="Bấm vào để đóng">x</div>
         <div class="nav__tablet-wrap-account__icon">
@@ -421,7 +434,7 @@
         <a href="#">Hỗ trợ <span><i class="fas fa-phone-volume"></i> 0398473263</span></a>
         <a href="#">Tải ứng dụng</a>
     </div>
-</div>
+</div> -->
 <!-- menu ngang hidden end-->
 
 <body>
@@ -430,7 +443,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <script src="js/education.js"></script>
+    <script src="./js/education.js"></script>
+    <script src="js/ex.js"></script>
     <!-- CDN Javascript and Bootstrap---------------------------------------------------------- end  -->
 </body>
 

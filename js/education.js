@@ -14,15 +14,15 @@ function toggleLoggin1(){
 }
 
 
-var hidden= document.getElementById("clickme");
-hidden.addEventListener("click",hiddenLogin);
-function hiddenLogin(){
-  if( document.getElementById("mobile-wrapLogin").style.height<="0px"){
-  document.getElementById("mobile-wrapLogin").style.height= "120px"
-  }else{
-    document.getElementById("mobile-wrapLogin").style.height="0px"
-  }
-}
+// var hidden = document.getElementById("clickme");
+// hidden.addEventListener("click",hiddenLogin);
+// function hiddenLogin(){
+//   if( document.getElementById("mobile-wrapLogin").style.height<="0px"){
+//   document.getElementById("mobile-wrapLogin").style.height= "120px"
+//   }else{
+//     document.getElementById("mobile-wrapLogin").style.height="0px"
+//   }
+// }
 
 
 function openNav() {

@@ -48,8 +48,8 @@
         <div class="logo-text">
             <a href="#">Code Super</a>
         </div>
-        <div onclick="openNav()" class="mobile-menu mr25 ">
-            <i style="color: white;font-size: 26px; line-height: 10vh;" class="fas fa-bars mr10"></i>
+        <div class="mobile-menu mr25 ">
+            <i id="colapsee" style="color: white;font-size: 26px; line-height: 10vh;" class="fas fa-bars mr10"></i>
         </div>
     </div>
 </div>
@@ -63,8 +63,8 @@
         <div class="container-left-wrap__menu">
             <!-- home + giới thiệu-->
             <div class="container-left-wrap__menu-home df">
-                <a href="htmlcssjs.html"> <i class="fas fa-home mr10"></i> Trang chủ</a>
-                <a href="#"> <i class="fas fa-globe mr10"></i> Giới thiệu</a>
+                <a href="index.html"> <i class="fas fa-home mr10"></i> Trang chủ</a>
+                <a href="htmlcssjs.html"> <i class="fas fa-globe mr10"></i> Giới thiệu</a>
             </div>
             <!-- home + giới thiệu end-->
             <div class="container-left-wrap__menu-home df mt50">
@@ -136,43 +136,250 @@
         </div>
 
 
-        <div class="mucluc mb30 mt30">1. Javascript là gì ? </div>
+        <div id="js1" class="mucluc mb30 mt30">1. Javascript là gì ? </div>
         <p class="mt30">
             <span class="chudam">Javascript</span> là một ngôn ngữ lập trình kịch bản dựa vào đối tượng phát triển có sẵn hoặc tự định nghĩa ra, javascript được sử dụng rộng rãi trong các ứng dụng Website. Javascript được hỗ trợ hầu như trên tất cả các trình duyệt như <span class="chudo">Firefox, Chrome, ...</span> thậm chí các trình duyệt trên thiết bị di động cũng có hỗ trợ.
         </p>
         <p class="mt30">
             Nếu bạn đã biết qua về <span class="chuxanh">HTML5</span> thì bạn thấy có các khái niệm như <span class="chudo">sessionStore</span> hay <span class="chudo">localStore</span>, đây là hai đối tượng được tạo nên từ Javascript nên rõ ràng trong HTML5 cũng có sử dụng nó. Với những ứng dụng đó thì bạn thấy javascript không thể chết trong các ứng dụng website được.
         </p>
+        <p class="mt30">
+            JavaScript (viết tắt là "js") là một ngôn ngữ lập trình mang đầy đủ tính năng của một ngôn ngữ lập trình động mà khi nó được áp dụng vào một tài liệu HTML, nó có thể đem lại khả năng tương tác động trên các trang web. Cha đẻ của ngôn ngữ này là Brendan Eich.
+
+            JavaScript thật sự rất linh hoạt. Bạn có thể bắt đầu với các bước nhỏ, với ? viện ảnh, bố cục có tính thay đổi và phản hồi đến các nút nhấn. Khi có nhiều kinh nghiệm hơn, bạn có thể tạo ra các trò chơi, hoạt họa 2 chiều hoặc 3 chiều, ứng dụng cơ sở dữ liệu toàn diện và nhiều thứ khác!
+        </p>
+
+        <div id="js2" class="mucluc mb30 mt30">2. Cú pháp, các cách viết Javascript</div>
+        <p class="mt30">
+            Bước đầu tiên để học Javascript là bạn phải chuẩn bị một phần mềm để viết mã Javascript, mình thì thích dùng Visual Studio Code nhưng nếu bạn là người mới thì nên sử dụng Notepad++ vì nó rất nhẹ và dễ cài đặt.
+        </p>
+        <p class="mt30">
+            Qua khái niệm javascript là gì? thì bạn thấy tất cả các trình duyệt đều hỗ trợ nên ta không cần phải download thư viện gì cả mà thông qua những đoạn mã script giúp trình duyệt nhận diện được đó là Javascript.
+        </p>
+        <p class="mt30 chudam">
+            Cặp thẻ mở và đóng.
+        </p>
+        <p class="mt30">
+            Tất cả những đoạn mã Javascript đều phải đặt trong cặp thẻ mở 
+            <span class="chudo"><</span>
+            <span class="chudo">script</span>
+            <span class="chudo">></span> và thẻ đóng 
+            <span class="chudo"><</span>
+            <span class="chudo">/script</span>
+            <span class="chudo">></span>,
+            ví dụ:
+        </p>
+        <p class="mt30">
+            Mã JavaScript cụ thể được nhúng vào trong tài liệu HTML bằng thẻ <span class="chudo">script</span>. Chúng ta có thể nhúng nhiều script vào trong cùng một tài liệu, mỗi script nằm trong một thẻ SCRIPT. Khi trình duyệt gặp phải một thẻ <span class="chudo">script</span> nào đó, nó sẽ đọc từng dòng một cho đến khi gặp thẻ đóng <span class="chudo">script</span>. Tiếp đến nó sẽ kiểm tra lỗi trong các câu lệnh JavaScript. Nếu gặp phải lỗi, nó sẽ cho hiển thị lỗi đó trong chuỗi các hộp cảnh báo  lên màn hình. Nếu không có lỗi, các câu lệnh sẽ được biên dịch sao cho máy tính có thể hiểu được lệnh đó.
+        </p>
+        <div class="border mt30">
+            <span class="chudam">Cặp thẻ script</span>
+            <div style="background-color: white;" class="borderk">
+                <p><span class="stt">1</span>
+                <span><</span> <span>script language = <span class="chuxanh">"javascript"</span>></span>
+                </p>
+                <p><span class="stt">2</span> &nbsp;&nbsp;&nbsp;&nbsp; alert ( <span class="chuxanh">"Hello World "</span>) ;</p>
+                <p><span class="stt">3</span>&nbsp;&nbsp;<span><</span> /script>   </p>
+            </div>
+        </div>
+        <p class="mt30 chudam">Đặt thẻ script ở đâu ?</p>
+        <p class="mt30">Chúng ta có ba cách thường được sử dụng sau đây :</p>
+        <p class="mt30 chudam">Cách 1 : Internal - viết trong file HTMl hiện tại</p>
+        <p class="mt30">
+            Thông thường chúng ta sẽ viết những đoạn mã javascript trên phần <span class="chuxanh">head</span>, tuy nhiên đó  không phải là điều kiện bắt buộc, nghĩa là bạn có thể đặt ở đâu tùy thích miễn là những đoạn mã đó phải được bao lại bằng thẻ script.
+        </p>
+        <!-- thẻ head-->
+        <div class="border mt30 chudam">Ví dụ đặt trong thẻ head</div>
+        <div class="borderk">
+            <p><span class="stt">1</span>&nbsp;&nbsp<span><</span>html></p>
+            <p><span class="stt">2</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp&nbsp<span><</span>head></p>
+            <p><span class="stt">3</span>&nbsp;&nbsp&nbsp&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp&nbsp<span><</span>title> Ví dụ đặt trong thẻ head <span><</span>/title></p>
+            <p><span class="stt">4</span>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><</span> <span>script language = <span class="chuxanh">"javascript"</span>></span>
+                </p>
+                <p><span class="stt">5</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; alert ( <span class="chuxanh">"Hello World "</span>) ;</p>
+                <p><span class="stt">6</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><</span> /script>   </p>
+                <p><span class="stt">7</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><</span> /head>   </p>
+                <p><span class="stt">8</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><</span> body>   </p>
+                <p><span class="stt">9</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Somthing code here !   </p>
+                <p><span class="stt">0</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><</span> /body>   </p>
+                <p><span class="stt">1</span>&nbsp;&nbsp;<span><</span> /html>   </p>
+
+        </div>
+
+        <div class="border mt30 chudam">Ví dụ đặt trong thẻ body</div>
+        <div class="borderk">
+            <p><span class="stt">1</span>&nbsp;&nbsp<span><</span>html></p>
+            <p><span class="stt">2</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp&nbsp<span><</span>head></p>
+            <p><span class="stt">3</span>&nbsp;&nbsp&nbsp&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp&nbsp<span><</span>title> Ví dụ đặt trong thẻ head <span><</span>/title></p>
+            
+                <p><span class="stt">4</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><</span> /head>   </p>
+                <p><span class="stt">5</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><</span> body>   </p>
+                <p><span class="stt">6</span>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><</span> <span>script language = <span class="chuxanh">"javascript"</span>></span>
+                    </p>
+                    <p><span class="stt">7</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; alert ( <span class="chuxanh">"Hello World "</span>) ;</p>
+                    <p><span class="stt">8</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><</span> /script>   </p>
+                <p><span class="stt">9</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><</span> /body>   </p>
+                <p><span class="stt">0</span>&nbsp;&nbsp;<span><</span> /html>   </p>
+
+        </div>
+        <p class="mt30 chudam">Cách 2 : External - viết ra một file js khác rồi import vào</p>
+        <p class="mt30">
+            Bạn có thể viết những đoạn mã javascript ở một file có phần mở rộng là <span class="chudo">.js</span>, sau đó dùng thẻ <span class="chudo">script</span> để import vào ( giống như đối với css vậy ). Ví dụ file JS của mình có tên là <span class="chudo">demo.js</span> thì lúc này mình có thẻ import như sau :
+        </p>
+        <div class="border mt30">Code import js</div>
+        <div class="borderk">
+            <p><span class="stt">1</span> <span><</span>
+                <span class="chuxanh">script</span> <span class="chumo"> language =</span><span class="chuxanh">" javascript "</span>
+                <span class="chumo">src=</span><span class="chuxanh">" demo.js "</span> <span>></span> <span><</span> <span class="chuxanh">/script</span><span>></span>
+            </p>
+        </div>
+        <p class="mt30">Lúc này các đoạn mã bên trong file <span class="chudo">demo.js</span> bạn không cần phải bọc nó trong thẻ <span class="chuxanh">script</span> nữa, vì nó là file có đuôi là <span class="chudo">.js</span> nên trình duyệt  tự nhận diện đây là file chứa mã <span class="chudo">javascript</span>
+        
+        </p>
+        <p class="mt30 chudam">Cách 3 : Inline - viết trực tiếp trong thẻ HTML</p>
+        <p class="mt30">
+            <span class="chudam">Inline</span> nghĩa là bạn sẽ viết những đoạn mã Javascript trực tiếp trong thẻ HTML luôn. Như ví dụ dưới đây là mình đang viết dạng <span class="chudam">inline</span> vì đoạn mã <span class="chudo">alert(1)</span> được đặt trong <span class="chudo">sự kiện onclick</span> của thẻ button.
+        </p>
+
+        <div class="border mt30">Code bên trong sự kiện click</div>
+        <div class="borderk">
+            <p><span class="stt">1</span> <span><</span>
+                <span class="chuxanh">input</span> <span class="chumo"> type =</span><span class="chuxanh">" button "</span>
+                <span class="chumo">onclick=</span><span class="chuxanh">" alert(1) "</span> <span class="chumo">value=</span> <span class="chuxanh">"click me"</span>  <span>/></span>
+            </p>
+        </div>
+
+
+        <div id="js3" class="mucluc mb30 mt30">3. Viết chương trình Hello World đầu tiên </div>
+        <p class="mt30">Trước khi thực hành thì bạn phải chắc chắn là bạn đã cài đặt <span class="chudo">Notepad++</span> để viết mã Javascript nhé, hoặc bạn có thể sử dụng một phần mềm code bất kì.</p>
+        <p class="mt30"><span class="chudam">Bước 1 :</span> Bây giờ chúng ta thực hành nhé, bạn hãy tạo một file index.html và lưu tại bất kì vị trí nào, desktop hay ổ D, ổ C gì đó thì tùy bạn, miễn là phần mở rộng là .html, sau đó mở file đó bằng Notepad++ rồi gõ nội dung sau vào:</p>
+
+        <div class="border mt30">Mã HTML</div>
+        <div class="borderk">
+            <p><span class="stt">1</span>&nbsp;&nbsp<span><</span>html></p>
+            <p><span class="stt">2</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp&nbsp<span><</span>head></p>
+            <p><span class="stt">3</span>&nbsp;&nbsp&nbsp&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp&nbsp<span><</span>title>  <span><</span>/title></p>
+            <p><span class="stt">4</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><</span> /head></p>
+            <p><span class="stt">6</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><</span>input
+            type=<span class="chuxanh">"button"</span> value=<span class="chuxanh">" Click me"</span> <span>/></span>
+            </p>
+            <p><span class="stt">5</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><</span> body>   </p>
+            <p><span class="stt">7</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><</span> /body>   </p>
+            <p><span class="stt">8</span>&nbsp;&nbsp;<span><</span> /html>  </p>
+        </div>
+
+        
+
+        <p class="mt30">
+            Chạy lên bằng <span class="chudo">Firefox</span> hoặc <span class="chudo">Chrome</span> bạn thấy xuất hiện một <span class="chudo">button</span>. Bây giờ ta sẽ viết ứng dụng khi <span class="chuxanh">click</span> vào button đó thì sẽ xuất hiện một thông báo "Hello World" nhé. Có lưu ý là button đó mình có đặt <span class="chudo">id = " clickme "</span> nha.
+        </p>
+        <input class="btn mt30" type="button" id="clickme" value="Click me">
+
+        <p class="mt30"><span class="chudam">Bước 2 :</span> Viết đoạn mã Javascript khi click vào button có  <span class="chudo">id = " clickme"</span> thì sẽ có thông báo hiện lên màn hình </p>
+
+        <div class="border mt30">Toàn bộ chương trình</div>
+        <div class="borderk">
+            <p><span class="stt">1</span>&nbsp;&nbsp<span><</span>html></p>
+            <p><span class="stt">2</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp&nbsp<span><</span>head></p>
+            <p><span class="stt">3</span>&nbsp;&nbsp&nbsp&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp&nbsp<span><</span>title> Viết chương trình Hello World đầu tiên <span><</span>/title></p>
+            
+                <p><span class="stt">4</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><</span> /head>   </p>
+                <p><span class="stt">5</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><</span> body>   </p>
+                <p><span class="stt">6</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><</span>input
+                type=<span class="chuxanh">"button"</span> value=<span class="chuxanh">" Click me"</span> id= <span class="chuxanh">"clickme"</span> <span>/></span>
+                <p><span class="stt">7</span>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><</span> <span>script language = <span class="chuxanh">"javascript"</span>></span>
+                    </p>
+                 <p><span class="stt">8</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var button = document.getElementById("clickme");</p>   
+                 <p><span class="stt">9</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; button.addEventListener(" click ",function() {</p>
+                    <p><span class="stt">0</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; alert (" Hello World ");</p>
+                    <p><span class="stt">1</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; } ) ;</p>
+                <p><span class="stt">2</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><</span> /script>   </p>
+                <p><span class="stt">3</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><</span> /body>   </p>
+                <p><span class="stt">4</span>&nbsp;&nbsp;<span><</span> /html>   </p>
+
+        </div>
+        <div onclick="hi()"  class=" mt30 btn">
+            Thử xem
+        </div>
+
+
+        <p class="mt30">
+            <span class="chudo">
+                <span class="chudam">Câu lệnh :</span><span> <</span> input type = " button " id = "clickme" value = " Click me" />
+            </span>
+            <span> : Tạo một nút xác định có thể nhấn với <span class="chuxanh">id="clickme"</span></span>
+        </p>
+        <p class="mt30">
+            <span class="chudo">
+                <span class="chudam">Câu lệnh :</span> <span>var button = document.getElementById('clickme');</span>
+            </span>
+            <span>: Đây là cách để khai báo biến của <span class="chuxanh">javascript</span></span>, biến <span class="chuxanh">button</span> được gán giá trị sau dấu <span class="chudo">"="</span>, <span class="chuxanh">button</span> sẽ có giá trị là <span class="chudo">document.getElementById('clickme')</span>
+        </p>
+        <p class="mt30"><span class="chudo">document.getElementById('clickme')</span> là phương thức của javascript, nó sẽ truy xuất tới phần tử có <span class="chuxanh">id = "clickme"</span>, bước đầu để ta có thể thao tác lên nó.</p>
+
+        <p class="mt30"><span class="chudam">Câu lệnh : </span><span class="chudo">button.addEventListener("click",function())</span>
+            <span> khi click vào phần tử chứa trong button thì sẽ thực hiện một function</span>, <span class="chudo">addEventListener</span> là một phương thức của javascript, nó đính kèm một trình sử lý sự kiện vào phần tử đã chỉ định, và sự kiện ở đây là người dùng <span class="chudam">click</span> vào <span class="chuxanh">button</span> có <span class="chuxanh">id = "clickme"</span>.
+        </p>
+
+        <p class="mt30 "><span class="chudam">Câu lệnh :</span> <span class="chudo">Alert(" Hello World);</span>
+            là một phương thức hiển thị một hộp cảnh báo với  thông báo được chỉ định bên trong ngoặc nhọn () và nút OK. Nhằm đảm vào thông tin đến người dùng và ở đây nội dung cảnh báo là "Hello World" .
+        </p>
+        <p class="mt30">
+            Lưu ý là bạn phải đặt đoạn mã javascript bên dưới button như trong demo nhé, nếu bạn đặt ở trên là sẽ bị lỗi đấy, lý do tại sao thì trong các bài tiếp theo mình sẽ giải thích kỹ hơn.
+        </p>
+        <p class="mt30">
+            Vậy là xong rồi đấy cheeky bây giờ thì bạn biết <span class="chudam">javascript</span> là gì? rồi phải không nào.
+        </p>
 
 
 
+        <div id="js4" class="mucluc mb30 mt30">4. Các thư viện Javascript đình đám hiện nay</div>
+        <p class="mt30">
+            Những ứng dụng to lớn của Javascript khiến người ta không thể quên nó được. Hiện nay có rất nhiều thư viện và framework được viết từ Javascript như:
+        </p>
 
-
-
-
-
-
-
-        <div class="mucluc mb30 mt30">2. Cú pháp, các cách viết Javascript</div>
-        <div class="mucluc mb30 mt30">3. Viết chương trình Hello World đầu tiên </div>
-        <div class="mucluc mb30 mt30">4. Các thư viện Javascript đình đám hiện nay</div>
-        <div class="mucluc mb30 mt30">5. Lời kết</div>
+        <div class="borderk mt30">
+            <ul>
+                <li><span class="chudam">Angular JS</span>: Một thư viện dùng để xây dựng ứng dụng Single Page </li>
+                <li><span class="chudam">NodeJS</span>: Một thư viện được phát triển phía Server dùng để xây dựng ứng dụng realtime</li>
+                <li><span class="chudam">Sencha Touch</span>: Một Framework  dùng để xây dựng ứng dụng Mobile</li>
+                <li><span class="chudam">ExtJS</span>: Một Framework dùng xây dựng ứng dụng quản lý (Web Applications)</li>
+                <li><span class="chudam">Jquery</span>Một thư viện rất mạnh về hiểu ứng</li>
+                <li><span class="chudam">ReactJS</span>Một thư viện viết ứng dụng mobile</li>
+                <li> Và còn nhiều thư viện khác</li>
+            </ul>
+        </div>
+        <p class="mt30">Còn rất rất nhiều nhưng mình chỉ liệt kê bấy nhieu thôi nhé :D </p>
+        <div id="js5" class="mucluc mb30 mt30">5. Lời kết</div>
         <p class="mt30">
             Qua tất cả các phần ở trên, mình đã giới thiệu xong các khái niệm căn bản của CSS, giới thiệu được cách viết
             CSS như thế nào, cách sử dụng chúng ra sao và mốt số thuộc tính CSS cơ bản, tất cả chỉ mới là bắt đầu :D ,
             hẹn gặp lại các bạn trong các phần tiếp theo, hứa hẹn sẽ hay hơn và hấp dẫn hơn.
         </p>
         <div class="border mt30">Tham khảo</div>
-        <div class="borderk chudo"> <a title="tìm hiểu thêm về HTML" href="">Khóa học Javascript nâng cao ( Coming
+        <div class="borderk chudo"> <a title="tìm hiểu thêm về HTML" href="comingsoon.html">Khóa học Javascript nâng cao ( Coming
                 soon)</a></div>
         <p class=" mt30 mb50 talc chudam chuxanh"><a href="css.html"> Chúc mừng bạn đã học đến tận đây, mình sẽ sớm phát
                 triển thêm các khóa học mới trong thời gian tới.</a></p>
     </div>
 </div>
 
-
+<div id="colapseMenu" class="colapse">
+    <div class="item "><a href="index.html">TRANG CHỦ</a></div>
+    <div class="item "><a href="htmlcssjs.html">GIỚI THIỆU</a></div>
+    <div class="item "><a href="html.html">HTML CƠ BẢN</a></div>
+    <div class="item "><a href="css.html">CSS CƠ BẢN</a></div>
+    <div class="item "><a href="js.html">JAVASCRIPT CƠ BẢN</a></div>
+    <div class="btnn">
+        <input type="text" placeholder="Tìm kiếm...">
+        <button><i class="fas fa-search"></i></button>
+     </div>
+ </div>
 <!-- my slider menu-->
-<div id="mySidebar" class="nav__tablet-wrap">
+<!-- <div id="mySidebar" class="nav__tablet-wrap">
     <div class="nav__tablet-wrap-account">
         <div onclick="closeNav()" class="closeNav" title="Bấm vào để đóng">x</div>
         <div class="nav__tablet-wrap-account__icon">
@@ -205,7 +412,7 @@
         <a href="#">Hỗ trợ <span><i class="fas fa-phone-volume"></i> 0398473263</span></a>
         <a href="#">Tải ứng dụng</a>
     </div>
-</div>
+</div> -->
 <!-- menu ngang hidden end-->
 
 <body>
@@ -215,6 +422,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script src="js/education.js"></script>
+    <script src="./js/ex.js"></script>
     <!-- CDN Javascript and Bootstrap---------------------------------------------------------- end  -->
 </body>
 
